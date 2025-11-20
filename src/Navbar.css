@@ -1,0 +1,145 @@
+/*.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}*/
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin-left: auto; /* empuja los links a la derecha */
+}
+
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Links desktop 
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}*/
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+  background-color: rgba(127, 132, 135, 0.433);
+}
+
+/* Hamburguesa */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1000; /* más alto que el menú */
+  
+}
+
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #ffffffd2;
+  border-radius: 2px;
+  transition: all 0.3s;
+
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+     margin-left: auto; /* empuja el icono hacia la derecha */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 150px;
+    padding-left: 0%;
+    background-color: #333333c9;
+    flex-direction: column;
+    padding-top: 60px;
+    align-items: center;
+    transform: translateX(100%); /* menú oculto */
+    transition: transform 0.3s ease;
+}
+
+  .nav-links.active {
+    transform: translateX(0);     /* menú visible */
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    
+  }
+
+  /* animación de la hamburguesa */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}

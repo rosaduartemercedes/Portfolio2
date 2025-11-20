@@ -1,0 +1,44 @@
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.whatsapp-icon {
+  width: 55px;
+  height: 55px;
+/* color oficial WhatsApp */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.whatsapp-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.whatsapp-tooltip {
+  position: absolute;
+  right: 70px;              /* Ubicado a la izquierda del ícono */
+  background: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(5px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  white-space: nowrap;
+}
+
+/* Cuando el mouse está encima: mostrar tooltip */
+.whatsapp-btn:hover .whatsapp-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}

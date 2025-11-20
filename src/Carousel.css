@@ -1,0 +1,130 @@
+.carousel-wrapper {
+  display: flex;
+  align-items: flex-start; /* IMPORTANTE: evita que el carrusel se baje */
+  padding: 20px;
+
+}
+
+/* Texto */
+.text-box-carousel {
+  width: 50%;        /* NO max-width */
+  margin-left: 5%;   /* margen moderado */
+  line-height: 1.6;
+  font-size: 1rem;
+  flex-grow: 1;      /* crece sólo el texto, NO empuja el carrusel */
+  max-width:900px;
+  margin-right: 2%;
+   text-align: center;
+
+  
+}
+
+/* Carrusel */
+.carousel-container {
+  width: 35%;        /* ancho fijo relativo */
+  min-width: 300px;  /* evita que colapse en pantallas medianas */
+  aspect-ratio: 16/9;/* mantiene proporción sin usar padding-top */
+  background-color: #71787c84;
+  position: relative;
+}
+
+/* Imágenes */
+.carousel-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+/* Responsive: texto debajo del carrusel en pantallas pequeñas */
+@media (max-width:1000px) {
+  .carousel-wrapper {
+    flex-direction: column; /* carrusel arriba, texto abajo */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .carousel-container {
+    order: 1;
+    width: 100%;          /* ocupa todo el ancho posible */
+    height: 50vh;         /* ocupa la mitad de la pantalla */
+    max-width: 100%;      /* evita desbordes */
+    padding-top: 0;       /* eliminamos padding-top proporcional */
+    margin: 0 auto;       /* centramos */
+  }
+
+  .carousel-image {
+    width: 100%;
+    height: 100%;         /* ahora la imagen llena el 50% de la pantalla */
+    object-fit: contain;   /* mantiene relación de aspecto */
+  }
+
+  .text-box-carousel {
+    order: 2;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 0%;
+  }
+}
+
+
+@media (max-width: 1800px) and (min-width: 1000px) {
+
+  .carousel-wrapper {
+    margin-top: 1%;  /* Baja el bloque completo */
+    margin-bottom: 0%;  /* Lo mantiene cerca del footer */
+    gap: 0px;          /* más separación entre texto y carrusel */
+  
+  }
+
+  .carousel-container {
+    margin-top: 0%;     /* Evita que suba solo */
+    margin-bottom: 0%;  /* lo acerca al footer */
+    margin-right: 9.7%;
+  }
+
+  .text-box-carousel {
+    margin-top: 0%;     /* lo baja un poco también */
+  }
+}
+
+
+.gallery-btn {
+  margin-top: 1.5rem;
+  background: #7a818f;         /* azul oscuro */
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.35);
+  background: #3f68bb;
+}
+
+.camera-icon {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle; /* Alinea verticalmente sin flex */
+  margin-right: 6px;      /* Espacio con el texto */
+}
+
+.gallery-btn span {
+  display: inline-block;  /* Asegura inline */
+  vertical-align: middle;
+}

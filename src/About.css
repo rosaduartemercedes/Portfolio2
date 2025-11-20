@@ -1,0 +1,76 @@
+.contenedor-imagenes {
+  display: flex;
+  justify-content: center;   /* centra horizontalmente */
+  gap: 20px;                 /* espacio entre imágenes */
+  align-items: center;       /* las alinea verticalmente */
+}
+
+.img {
+  width: 200px;              /* ajustá el tamaño como quieras */
+  height: auto;
+  border-radius: 0;          /* rectas, como te gustan estas 3 */
+}
+
+
+.equipo-container {
+  display: flex !important;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+}
+
+/* Fotos redondas y centradas */
+.Fotoperfil1,
+.Fotoperfil2 {
+  width: 180px;        /* ajusta el tamaño que quieras */
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;  /* redondeadas */
+  display: inline-block;  /* IMPORTANTE */
+  margin: 0 auto;      /* para centrarlas dentro del div .text-center */
+}
+
+.flex-perfiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.perfil-row .text-center {
+  width: 280px;   /* IMPORTANTE: ya no mide 100% */
+}
+
+
+.flex-perfiles .text-center {
+  text-align: center;   /* Asegura centro total */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;   /* Centra todo el contenido del div */
+  width: 280px;          /* Mantiene formato de tarjeta */
+}
+
+
+.img {
+  width: 100%;            /* para que sean 100% del contenedor */
+  max-width: 300px;       /* tamaño máximo en pantallas grandes */
+  height: 220px;          /* altura fija para un tamaño uniforme */
+  object-fit: cover;      /* evita deformación */
+  border-radius: 0;       /* rectas */
+}
+
+/* Contenedor responsivo */
+.contenedor-imagenes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;        /* IMPORTANTE: permite que bajen en pantallas chicas */
+}
+
+@media (max-width: 600px) {
+  .img {
+    max-width: 150px;   /* se achican en pantalla chica */
+    height: 150px;
+  }
+}
