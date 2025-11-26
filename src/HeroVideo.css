@@ -1,196 +1,167 @@
-/* Grid principal */
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* texto + video */
-  gap: 0px;                     /* espacio entre columnas */
-  width: 100%;
-  height: 50%;                  /* altura del grid */
-  padding-top: 2%;               /* separa del navbar */
-  align-items: center;            /* alinea contenido arriba */
+  grid-template-columns: 1fr 1fr;   /* 👈 FIX: evita overflow */
+  gap: 30px;
+  padding: 40px 3%;
+  margin-top: 60px;
+  max-width: 100vw;                 /* 👈 evita que se pase del ancho */
   box-sizing: border-box;
 }
 
-/* Texto */
-.text-box-video {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.6;
-  font-size: 1rem;
-  max-width: 600px;  
-  margin-top: 7%; /* eliminamos margin-top excesivo */
-  margin-left: 0%;
-  text-align: center;
-}
-
-/* Video */
+/* VIDEO RESPONSIVE */
 .video-box {
   position: relative;
-  width: 80%;                     /* ancho del video */
-  max-width: 800px;
-  padding-top: 5%;                 /* altura proporcional (ajustable) */
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: black;
+  overflow: hidden;
 }
 
 .video {
-  position: relative;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;            /* mantiene relación de aspecto */
+  object-fit: cover;
 }
 
-/* Controles */
 .controls {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
+  bottom: 12px;
+  left: 12px;
   display: flex;
   align-items: center;
-  gap: 15px;
-  background: rgba(0, 0, 0, 0.4);
+  gap: 12px;
+  background: rgba(0, 0, 0, 0.35);
   padding: 8px 12px;
   border-radius: 8px;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(4px);
 }
 
-/* Botón de play/pause */
-.play-btn {
-  background: rgba(255, 255, 255, 0.8);
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 6px;
-  font-size: 18px;
-  font-weight: bold;
+/* TEXTO */
+.text-box-video h1 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
 }
 
-/* Slider de volumen */
-.volume-slider {
-  width: 120px;
-  cursor: pointer;
+.text-box-video p {
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
-/* Responsive: en pantallas chicas */
-@media (max-width:1000px) {
-  .grid-container {
-    grid-template-columns: 1fr; /* pone todo en una columna */    
-    height: auto; /* ajusta altura automáticamente */
-    margin-left: 0%; /* centra la columna */
-     /* algo de espacio lateral */
-  }
-
-  .text-box-video {
-    max-width: 100%;
-    align-items: center; /* centra texto bajo el video */
-    text-align: center;  /* opcional, mejor visual */
-    margin-top: 0%;
-    margin-right: 0%;
-    margin-left: 0%;
-    padding: 2%;
-  }
-
-  .video-box {
-    width: 100%;
-    max-width: 100%;
-    padding-top: 10%; /* mantiene proporción 16:9 */
-    margin-left: 0%;
- 
-  }
-}
-
-
+/* TARJETAS POLAROID */
 .cards-container-video {
-  display: flex;
+  margin-top: 25px;
+  display: flex;                    /* 👈 FLEX para controlar mejor */
   justify-content: center;
-  gap: 2rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.small-card-video {
-  width: 150px;
-  text-align: center;
-  
-}
-
-.small-card-video img {
+  gap: 20px;                        /* 👈 distancia ENTRE polaroids */
+  flex-wrap: nowrap;                /* 👈 siempre 3 en la misma fila */
   width: 100%;
-  height: 90px;
-  object-fit: cover;
-  
-}
-
-.small-card-video h4 {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-
-@media (max-width: 1800px) and (min-width: 1000px) {
-  .video-box {
-    margin-top: 0%; /* bajalo más o menos según prefieras */
-    margin-left: 15%;
-  }
-
-  .grid-container {
-    column-gap: 0px; /* separa el video del texto */
-    padding-top: 2%;
-  }
-
-  .text-box-video {
-    margin-top: 2%; /* baja el texto para que no quede tan arriba */
-    margin-left: 5%;
-  }
+  overflow-x: hidden;
+  padding-bottom: 5%;
+  padding-top: 2%;
 }
 
 .small-card-video {
-  width: 160px;
-  background: #ffffff;             /* azul claro */
-  padding: 10px;
-  border-radius: 2px;             /* bordes suaves */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  width: 140px;                    /* 👈 tamaño polaroid */
+  background: #ffffff;
+  padding: 14px;                   /* borde polaroid */
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   text-align: center;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 2px;
 }
 
-/* Marco blanco tipo “foto instantánea” */
 .small-card-video img {
   width: 100%;
-  height: 110px;
-  object-fit: cover;
-  border-radius: 4px;
-  background: white;
-  padding: 6px;                    /* borde blanco alrededor */
-  box-sizing: border-box;
+  height: 80px;
+  object-fit: contain;
 }
 
-/* Título debajo estilo polaroid */
 .small-card-video h4 {
-  margin-top: 0.6rem;
-  font-size: 1rem;
-  font-weight: bold;
-  color: rgb(12, 9, 18);
+  font-size: 0.85rem;
+  margin-top: 8px;
+  color: #333;
 }
 
-/* ✨ Hover – agranda y agrega sombra */
 .small-card-video:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.28);
 }
 
-.cards-container-video {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  gap: 1.5rem;
-  margin-top: 2rem;
-  flex-wrap: nowrap; /* 🔥 evita que una tarjeta salte a la segunda fila */
+/* ==========================
+    RESPONSIVE
+   ==========================*/
+
+/* PANTALLAS MEDIANAS */
+@media (max-width: 1100px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 20px 3%;
+    margin-top: 40px;
+  }
+
+  .text-box-video h1,
+  .text-box-video p {
+    text-align: center;
+  }
+
+  .cards-container-video {
+    justify-content: center;
+    gap: 6%;
+  }
+
+  .small-card-video {
+    width: 120px;
+  
+}
+}
+
+/* PANTALLAS CHICAS */
+@media (max-width: 600px) {
+  
+
+   .grid-container {
+    grid-template-columns: 1fr !important;   /* 👈 FIX REAL */
+    gap: 9px !important;
+    padding: 9px 2% !important;
+   }
+
+  .cards-container-video {
+    gap: 8px;
+  }
+
+  .small-card-video {
+    width: 100px;        /* 👈 se achican pero siguen 3 en línea */
+    padding: 10px;
+  }
+
+  .small-card-video img {
+    height: 60px;
+  }
+
+  .small-card-video h4 {
+    font-size: 0.7rem;
+  }
+
+  .video {
+    object-fit: contain;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .small-card-video {
+    width: 90px !important;
+  }
+
+  .small-card-video img {
+    height: 50px !important;
+  }
+
+  .cards-container-video {
+    gap: 5px !important;
+  }
 }

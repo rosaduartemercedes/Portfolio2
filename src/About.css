@@ -1,76 +1,139 @@
+/* ============================
+      IMÁGENES RECTANGULARES
+   ============================ */
+
 .contenedor-imagenes {
   display: flex;
-  justify-content: center;   /* centra horizontalmente */
-  gap: 20px;                 /* espacio entre imágenes */
-  align-items: center;       /* las alinea verticalmente */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .img {
-  width: 200px;              /* ajustá el tamaño como quieras */
-  height: auto;
-  border-radius: 0;          /* rectas, como te gustan estas 3 */
+  width: 100%;
+  max-width: 300px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0;
 }
 
+/* Medianas */
+@media (max-width: 1100px) {
+  .img {
+    max-width: 220px;
+    height: 160px;
+  }
+}
+
+/* Chicas → 3 en línea y más pequeñas */
+@media (max-width: 600px) {
+  .contenedor-imagenes {
+    justify-content: center;
+    gap: 8px;                  /* más pegadas */
+  }
+
+  .img {
+    max-width: 110px;          /* tamaño chico */
+    height: 110px;             /* cuadradas */
+  }
+}
+
+/* Ultra chicas (teléfonos de 360px) */
+@media (max-width: 400px) {
+  .img {
+    max-width: 95px;
+    height: 95px;
+  }
+}
+
+
+/* ============================
+      SECCIÓN DEL EQUIPO
+   ============================ */
 
 .equipo-container {
   display: flex !important;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   gap: 40px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-/* Fotos redondas y centradas */
+/* Fotos redondas */
 .Fotoperfil1,
 .Fotoperfil2 {
-  width: 180px;        /* ajusta el tamaño que quieras */
+  width: 180px;
   height: 180px;
   object-fit: cover;
-  border-radius: 50%;  /* redondeadas */
-  display: inline-block;  /* IMPORTANTE */
-  margin: 0 auto;      /* para centrarlas dentro del div .text-center */
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
+/* Contenedor de perfiles */
 .flex-perfiles {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 3rem;
+  flex-wrap: wrap;
 }
 
-.perfil-row .text-center {
-  width: 280px;   /* IMPORTANTE: ya no mide 100% */
-}
-
-
+/* Tarjeta */
 .flex-perfiles .text-center {
-  text-align: center;   /* Asegura centro total */
+  text-align: center;
+  width: 280px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;   /* Centra todo el contenido del div */
-  width: 280px;          /* Mantiene formato de tarjeta */
+  align-items: center;
 }
 
 
-.img {
-  width: 100%;            /* para que sean 100% del contenedor */
-  max-width: 300px;       /* tamaño máximo en pantallas grandes */
-  height: 220px;          /* altura fija para un tamaño uniforme */
-  object-fit: cover;      /* evita deformación */
-  border-radius: 0;       /* rectas */
-}
+/* ============================
+      RESPONSIVE – PANTALLAS CHICAS
+   ============================ */
 
-/* Contenedor responsivo */
-.contenedor-imagenes {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;        /* IMPORTANTE: permite que bajen en pantallas chicas */
-}
-
+/* Imágenes redondas del equipo → más chicas y en una fila */
+/* Tarjetas más chicas en móviles */
 @media (max-width: 600px) {
-  .img {
-    max-width: 150px;   /* se achican en pantalla chica */
-    height: 150px;
+
+  .flex-perfiles {
+    flex-direction: row !important;
+    flex-wrap: wrap;              /* 👈 permite varias por fila */
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .text-center {
+    width: 140px !important;      /* 👈 ANCHO REDUCIDO para que entren */
+    margin: 0;
+    padding: 0;
+  }
+
+  .Fotoperfil1,
+  .Fotoperfil2 {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+/* Pantallas muy chicas (360–400px) */
+@media (max-width: 400px) {
+
+  .text-center {
+    width: 120px !important;      /* 👈 más pequeñas aún */
+  }
+
+  .Fotoperfil1,
+  .Fotoperfil2 {
+    width: 95px;
+    height: 95px;
+  }
+
+  .flex-perfiles {
+    gap: 8px;
   }
 }
