@@ -6,10 +6,10 @@ export default function App() {
   const [loading, setLoading] = useState(true); // loader inicial
   const [imagesLoadedCount, setImagesLoadedCount] = useState(0);
 {/*"http://localhost:3000/api/gallery" para probar
-    https://mi-galeria-back-2ece98vrg-rosaduartemercedes-projects.vercel.app/api/gallery para el back real*/}
+    https://mi-galeria-back.vercel.app/api/gallery  para el back real*/}
 
   useEffect(() => {
-    fetch("https://mi-galeria-back-2ece98vrg-rosaduartemercedes-projects.vercel.app/api/gallery")
+    fetch("https://mi-galeria-back.vercel.app/api/gallery")
       .then(res => res.json())
       .then(data => {
         setPhotos(data);
