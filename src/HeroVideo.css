@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trykker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC:wght@400..700&display=swap');
+
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;   /* 👈 FIX: evita overflow */
   gap: 30px;
   padding: 40px 3%;
-  margin-top: 60px;
+  margin-top: 40px;
   max-width: 100vw;                 /* 👈 evita que se pase del ancho */
   box-sizing: border-box;
 }
@@ -15,6 +23,7 @@
   aspect-ratio: 16/9;
   background: black;
   overflow: hidden;
+  margin-top: -2%;
 }
 
 .video {
@@ -36,15 +45,44 @@
   backdrop-filter: blur(4px);
 }
 
+/**/
+
+
+
+
+
+
+
+
+
+
+
+.text-box-video {
+  
+  justify-items: center;
+margin-top: -7%;
+   
+}
+
 /* TEXTO */
 .text-box-video h1 {
   font-size: 2.3rem;
   margin-bottom: 10px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /*font-family: "Viaoda Libre", serif;
+  font-weight: 400;
+  font-style: normal;*/
 }
 
 .text-box-video p {
   font-size: 1.1rem;
   line-height: 1.5;
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  text-align: center;
 }
 
 /* TARJETAS POLAROID */
@@ -52,18 +90,25 @@
   margin-top: 25px;
   display: flex;                    /* 👈 FLEX para controlar mejor */
   justify-content: center;
-  gap: 20px;                        /* 👈 distancia ENTRE polaroids */
+  gap: 65px;                        /* 👈 distancia ENTRE polaroids */
   flex-wrap: nowrap;                /* 👈 siempre 3 en la misma fila */
   width: 100%;
   overflow-x: hidden;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
   padding-top: 2%;
+  font-family: "Baskervville SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  
 }
 
 .small-card-video {
+  
   width: 140px;                    /* 👈 tamaño polaroid */
   background: #ffffff;
-  padding: 14px;                   /* borde polaroid */
+  padding: 0px;                   /* borde polaroid */
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   text-align: center;
   cursor: pointer;
@@ -72,23 +117,27 @@
   align-items: center;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   border-radius: 2px;
+  text-decoration: none;
 }
 
 .small-card-video img {
   width: 100%;
-  height: 80px;
+  height: 65px;
   object-fit: contain;
+  margin-top: 6%;
 }
 
 .small-card-video h4 {
-  font-size: 0.85rem;
-  margin-top: 8px;
-  color: #333;
+  font-size: 1rem;
+  color: #383838;
+  margin-top: 10%;
+  
+  
 }
 
 .small-card-video:hover {
   transform: translateY(-4px);
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 6px 20px rgba(255, 245, 104, 0.804);
 }
 
 /* ==========================
@@ -106,6 +155,7 @@
   .text-box-video h1,
   .text-box-video p {
     text-align: center;
+     transform: translateY(20%); 
   }
 
   .cards-container-video {

@@ -1,28 +1,18 @@
-/*import "../Navbar.css"; // <-- Importar CSS
-
-export default function Navbar() {
-  return (
-    <nav>
-      <h1>Mi Portfolio</h1>
-      <ul>
-        <li>Home</li>
-        <li>Proyectos</li>
-        <li>Contacto</li>
-      </ul>
-    </nav>
-  );
-}*/
-
 import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "../Navbar.css";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("inicio");
+  const navigate = useNavigate();
+  const location = useLocation();
 
+  const sections = ["inicio", "galeria", "contacto"];
+
+  // Detectar sección activa mientras scrolleamos
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["inicio", "servicios", "galeria", "contacto"];
       sections.forEach((id) => {
         const section = document.getElementById(id);
         if (section) {
@@ -38,6 +28,33 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+  const params = new URLSearchParams(location.search);
+  const scrollId = params.get("scroll");
+  if (scrollId) {
+    setTimeout(() => {
+      const element = document.getElementById(scrollId);
+      element?.scrollIntoView({ behavior: "smooth" });
+
+      // Limpiar query param después de scrollear
+      navigate("/", { replace: true });
+    }, 50);
+  }
+}, [location]);
+
+  // Función scroll/redirigir
+  const scrollToSection = (id) => {
+    if (location.pathname !== "/") {
+      // Estamos en otra ruta: vamos al home con query param
+      navigate("/?scroll=" + id);
+    } else {
+      // Ya estamos en home: scroll directo
+      const element = document.getElementById(id);
+      element?.scrollIntoView({ behavior: "smooth" });
+    }
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">Producciones Look</div>
@@ -47,25 +64,22 @@ export default function Navbar() {
           <a
             href="#inicio"
             className={activeSection === "inicio" ? "active-link" : ""}
-            onClick={() => setMenuOpen(false)}  // cierra menú al elegir link
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("inicio");
+            }}
           >
-            Conócenos
-          </a>
-        </li>
-        <li>
-          <a
-            href="#servicios"
-            className={activeSection === "servicios" ? "active-link" : ""}
-            onClick={() => setMenuOpen(false)}
-          >
-            Servicios
+            Inicio
           </a>
         </li>
         <li>
           <a
             href="#galeria"
             className={activeSection === "galeria" ? "active-link" : ""}
-            onClick={() => setMenuOpen(false)}
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("galeria");
+            }}
           >
             Galería
           </a>
@@ -74,7 +88,10 @@ export default function Navbar() {
           <a
             href="#contacto"
             className={activeSection === "contacto" ? "active-link" : ""}
-            onClick={() => setMenuOpen(false)}
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("contacto");
+            }}
           >
             Contacto
           </a>

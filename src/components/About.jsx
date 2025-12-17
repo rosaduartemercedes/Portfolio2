@@ -14,7 +14,7 @@ const Rami = "/RamiPerfil.png";
 
 
 return (
-    <section className="w-full px-6 py-16 bg-gray-100 text-gray-900">
+    <section id="inicio" className="w-full px-6 py-16 bg-gray-100 text-gray-900">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         <div className="space-y-4">
           <h2 className="text-4xl font-bold">Sobre Nosotros</h2>

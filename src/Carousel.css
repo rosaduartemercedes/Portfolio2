@@ -1,3 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC:wght@400..700&display=swap');
+
+
+.gallery-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: linear-gradient(#6fbaf4, #0d1b39);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, background 0.25s ease;
+  width: fit-content;
+  display: inline-flex;
+  align-self: center;
+  margin-top: 7%;
+  
+}
+
+/* Hover para desktop */
+.gallery-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(135deg, #374151, #1f2937);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+}
+
+/* Click */
+.gallery-btn:active {
+  transform: scale(0.97);
+}
+
+/* Icono */
+.camera-icon {
+  width: 22px;
+  height: 22px;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+}
+
+/* ------------------------- */
+/*      RESPONSIVE CSS       */
+/* ------------------------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .gallery-btn {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    gap: 8px;
+  }
+
+  .camera-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .gallery-btn {
+    padding: 9px 14px;
+    font-size: 0.9rem;
+    gap: 6px;
+    width: 45%;
+    text-align: center;
+  }
+
+  .camera-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -7,19 +119,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  padding: 20px;
+  gap: 24px;
+  padding: 0px;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden; /* evita que se salga */
+ margin-top: -7%;
+ margin-bottom: 3%;
+}
+
+.text-box-carousel h2 {
+  text-align: center;   /* CENTRA EL TÍTULO */
+  width: 100%;
+    font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 30%;
 }
 
 /* TEXTO */
 .text-box-carousel {
   flex: 1;
   max-width: 600px;
-  text-align: left;
+  text-align: center;
+
+margin-top: -7%;
+display: flex;
+  flex-direction: column;
+  /*align-items: flex-start; */
+align-items: center;
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
 }
+
 
 /* CARRUSEL */
 .carousel-container {
@@ -29,6 +163,8 @@
   aspect-ratio: 16 / 9;
   background-color: #71787c84;
   position: relative;
+  margin-left: 7%;
+  
 }
 
 /* IMÁGENES */
@@ -60,7 +196,14 @@
   .text-box-carousel,
   .carousel-container {
     max-width: 450px; 
+    
+      margin-top: 2%;
   }
+  .carousel-container{
+  
+ transform: translateX(-8%); 
+}
+
 }
 
 /* Pantallas chicas: tablet vertical + teléfonos */
@@ -70,16 +213,21 @@
     flex-direction: column;
     text-align: center;
     gap: 30px;
+    
   }
 
   .carousel-container {
     width: 90%;
     max-width: 450px;
     margin: 0 auto;
+    transform: translateX(1%); 
+   
   }
 
   .text-box-carousel {
     max-width: 90%;
     margin: 0 auto;
+    transform: translateY(-11%); 
+   
   }
 }

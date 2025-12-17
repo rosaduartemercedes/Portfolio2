@@ -9,7 +9,7 @@ export default function ContactSection() {
       <div className="contact-container">
         
         {/* TEXTO IZQUIERDA */}
-        <div className="contact-text">
+        <div id="contacto" className="contact-text">
           <h2>Hablemos de tu proyecto</h2>
 
           <p>

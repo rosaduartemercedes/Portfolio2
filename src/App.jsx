@@ -15,37 +15,35 @@ import NuestrasRedes from "./components/NuestrasRedes";
 import BodasPage from "./components/BodasPage";
 import ModaPage from "./components/ModaPage";
 import CumplePage from "./components/CumplePage";
+import Galeria from "./components/Galeria";
 
 function App() {
   return (
-    <Router>
+  <Router>
       <div className="app-container">
         <Navbar />
 
         <Routes>
-          {/* Página principal */}
           <Route
             path="/"
             element={
               <main className="main-content">
                 <HeroVideo />
                 <Carousel />
-                <AboutUs />
                 <ContactSection />
                 <FAQSection />
-                <WhatsAppButton />
               </main>
             }
           />
 
-          
           <Route path="/bodas" element={<BodasPage />} />
-          {/* Páginas de videos */}
           <Route path="/moda" element={<ModaPage />} />
           <Route path="/cumple" element={<CumplePage />} />
+          <Route path="/fotos" element={<Galeria />} />
         </Routes>
 
         <Footer />
+        <WhatsAppButton />  {/* <-- ahora siempre visible */}
       </div>
     </Router>
   );

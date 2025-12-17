@@ -4,7 +4,7 @@ import card1 from "../assets/Icono1.png";
 import card2 from "../assets/Icono2.png";
 import card3 from "../assets/Icono3.png";
 import { Link } from "react-router-dom"; // ✅ Importar Link
-
+import { useLocation } from "react-router-dom"; // ✅ IMPORTANTE
 
 
 export default function HeroVideo() {
@@ -12,7 +12,7 @@ export default function HeroVideo() {
   const [isPlaying, setIsPlaying] = useState(true);
   const [volume, setVolume] = useState(0.5);
   const [isMuted, setIsMuted] = useState(true);
-  
+    const location = useLocation(); // ✅
 
   useEffect(() => {
     if (videoRef.current) {
@@ -39,12 +39,30 @@ export default function HeroVideo() {
     }
   };
 
+  useEffect(() => {
+  const params = new URLSearchParams(location.search);
+  const scrollId = params.get("scroll");
+  if (scrollId) {
+    setTimeout(() => {
+      const element = document.getElementById(scrollId);
+      element?.scrollIntoView({ behavior: "smooth" });
+    }, 50); // espera a que React renderice el DOM
+  }
+}, [location]);
+
+
   return (
-    <div className="grid-container">
+    <div className="grid-container" id="inicio" >
       <div className="video-box">
+ 
         <video ref={videoRef} autoPlay loop muted={isMuted} className="video">
-          <source src="/video1.mp4" type="video/mp4" />
-        </video>
+  <source
+    src="https://res.cloudinary.com/dyddy7avc/video/upload/v1765990634/Emiadaptado2_zhclht.mp4"
+    type="video/mp4"
+  />
+</video>
+
+
 
         <div className="controls">
           <button className="play-btn" onClick={togglePlay}>
@@ -64,7 +82,7 @@ export default function HeroVideo() {
       </div>
 
       <div className="text-box-video">
-        <h1>Video y edición</h1>
+        <h1>VIDEO Y EDICIÓN</h1>
         <p>
           Ofrecemos una solución personalizada para cada ocasión y adaptada a tus necesidades.
         </p>
@@ -81,7 +99,7 @@ export default function HeroVideo() {
         
           <Link to="/moda" className="small-card-video">
           <img src={card2} alt="Card 2" />
-          <h4>Moda</h4></Link>
+          <h4>Backstages</h4></Link>
         
 
         
