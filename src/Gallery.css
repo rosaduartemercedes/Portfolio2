@@ -1,6 +1,7 @@
 .gallery {
   column-count: 7; /* número de columnas */
   column-gap: 16px; /* espacio entre columnas */
+  padding-top: 5%;
 }
 
 .gallery img {
@@ -36,4 +37,114 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+.gallery-img {
+  cursor: pointer;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.02);
+}
+
+/* LIGHTBOX */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* BOTONES */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0 10px;
+  padding-bottom: 1%;  
+}
+
+
+
+.nav.left:hover , .nav.right:hover {
+  padding: 0 10px;
+  padding-bottom: 1%;  
+  background-color: rgba(226, 222, 222, 0.336);
+}
+.nav.left {
+  left: 0;
+
+}
+
+.nav.right {
+  right: 0;
+}
+
+
+.close {
+  position: absolute;
+  top: 10%;
+  right: 2%;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: rgb(245, 237, 237);
+  cursor: pointer;
+  border-radius: 15%;
+  background: linear-gradient(180deg,rgba(255, 61, 119, 1) 0%, rgba(115, 14, 24, 1) 100%);
+  display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid rgba(0, 0, 0, 0.6);
+text-shadow:
+  -1px -1px 0 #000000da,
+   1px -1px 0 #000000da,
+  -1px  1px 0 #000000db,
+   1px  1px 0 #000000d2;
+
+}
+
+.close:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 14px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* 🔽 Click → botón presionado */
+.close:active {
+  transform: translateY(1px);
+  filter: brightness(0.85);
+  box-shadow:
+    inset 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.counter {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  font-size: 14px;
+  opacity: 0.8;
 }
