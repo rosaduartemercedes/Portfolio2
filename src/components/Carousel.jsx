@@ -7,11 +7,12 @@ export default function Carousel() {
   const [images, setImages] = useState([]);
   const [index, setIndex] = useState(0);
 
-  useEffect(() => {
-    fetch("https://mi-galeria-back.vercel.app/api/carrousell")
-      .then((res) => res.json())
-      .then((data) => setImages(data));
-  }, []);
+useEffect(() => {
+  fetch("https://mi-galeria-back.vercel.app/api/gallery")
+    .then((res) => res.json())
+    .then((data) => setImages(data))
+    .catch(console.error);
+}, []);
 
   useEffect(() => {
     if (!images.length) return;

@@ -64,7 +64,7 @@ export default function Navbar() {
   style={{ cursor: "pointer" }}
 >
   <img
-    src="/logo1.png"
+    src="icono1.png"
     alt="Producciones Look"
     className="logo-img"
   />
