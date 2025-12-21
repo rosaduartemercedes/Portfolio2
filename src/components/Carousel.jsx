@@ -8,7 +8,7 @@ export default function Carousel() {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    fetch("/api/carrousell")
+    fetch("https://portfolio-look-productions.vercel.app/api/carrousell")
       .then((res) => res.json())
       .then((data) => setImages(data));
   }, []);
