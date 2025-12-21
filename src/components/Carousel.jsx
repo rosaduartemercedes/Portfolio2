@@ -9,9 +9,15 @@ export default function Carousel() {
 
 useEffect(() => {
   fetch("https://mi-galeria-back.vercel.app/api/gallery")
-    .then((res) => res.json())
-    .then((data) => setImages(data))
-    .catch(console.error);
+    .then(res => {
+      console.log("Status:", res.status);
+      return res.json();
+    })
+    .then(data => {
+      console.log("Data recibida:", data);
+      setImages(data);
+    })
+    .catch(err => console.error("Error fetch:", err));
 }, []);
 
   useEffect(() => {
@@ -36,16 +42,16 @@ useEffect(() => {
         </Link>
       </div>
 
-      <div className="carousel-container">
-        {images.map((img, i) => (
-          <img
-            key={img.id}
-            src={img.src}
-            alt={`Slide ${i}`}
-            className={`carousel-image ${i === index ? "active" : ""}`}
-          />
-        ))}
-      </div>
+     <div className="carousel-container">
+  {images.map((img, i) => (
+    <img
+       key={`${img.id}-${i}`}
+      src={img.url}  // ✅ usar la propiedad correcta
+      alt={`Slide ${i}`}
+      className={`carousel-image ${i === index ? "active" : ""}`}
+    />
+  ))}
+</div>
     </div>
   );
 }
