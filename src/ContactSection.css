@@ -79,4 +79,7 @@
   .contact-item {
     justify-content: center;
   }
+  .contact-section{
+    transform: translateY(-13%); 
+  }
 }

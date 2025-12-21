@@ -64,6 +64,22 @@
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Celulares */
 @media (max-width: 480px) {
   .gallery-btn {
@@ -72,12 +88,24 @@
     gap: 6px;
     width: 45%;
     text-align: center;
+    transform: translateY(-110%)!important ;
+
   }
 
   .camera-icon {
     width: 18px;
     height: 18px;
   }
+
+  .text-box-carousel{
+    transform: translateY(-25%)!important ;
+  }
+
+  .text-box-carousel p {
+        transform: translateY(-60%)!important ;
+
+  }
+
 }
 
 
@@ -231,5 +259,10 @@ align-items: center;
     margin: 0 auto;
     transform: translateY(-11%); 
    
+  }
+
+  .carousel-container {
+        transform: translateY(-50%); 
+
   }
 }
