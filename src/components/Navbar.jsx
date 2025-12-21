@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "../Navbar.css";
 
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("inicio");
@@ -57,7 +58,17 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">Producciones Look</div>
+<div
+  className="logo"
+  onClick={() => scrollToSection("inicio")}
+  style={{ cursor: "pointer" }}
+>
+  <img
+    src="/logo1.png"
+    alt="Producciones Look"
+    className="logo-img"
+  />
+</div>
 
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
         <li>

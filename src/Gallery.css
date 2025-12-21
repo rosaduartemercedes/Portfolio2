@@ -148,3 +148,38 @@ text-shadow:
   font-size: 14px;
   opacity: 0.8;
 }
+
+
+
+
+
+
+
+/* Tablets */
+@media (max-width: 1200px) {
+  .gallery {
+    column-count: 5;
+  }
+}
+
+/* Tablets chicas */
+@media (max-width: 900px) {
+  .gallery {
+    column-count: 4;
+  }
+}
+
+/* Celulares grandes */
+@media (max-width: 600px) {
+  .gallery {
+    column-count: 2;
+    column-gap: 12px;
+  }
+}
+
+/* Celulares chicos */
+@media (max-width: 400px) {
+  .gallery {
+    column-count: 2;
+  }
+}

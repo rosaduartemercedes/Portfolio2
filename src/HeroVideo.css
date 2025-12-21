@@ -14,6 +14,7 @@
   margin-top: 40px;
   max-width: 100vw;                 /* 👈 evita que se pase del ancho */
   box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
 }
 
 /* VIDEO RESPONSIVE */
@@ -28,11 +29,15 @@
 
 .video {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;          /* 👈 CLAVE */
+  max-height: 100%;
+  object-fit: contain;
+  background: black;
 }
 
-.controls {
+
+
+/*.controls {
   position: absolute;
   bottom: 12px;
   left: 12px;
@@ -43,9 +48,7 @@
   padding: 8px 12px;
   border-radius: 8px;
   backdrop-filter: blur(4px);
-}
-
-/**/
+}*/
 
 
 
