@@ -39,6 +39,9 @@
   color: #ffcc00;
 }
 
+.footer-section.enlaces {
+ margin-top: 10%;
+}
 .social-icons a {
   display: inline-block;
   margin-right: 10px;
@@ -59,6 +62,9 @@
   grid-column: 1 / -1; /* ocupa toda la fila debajo de las 3 columnas */
 }
 
+
+
+
 /* Opcional: ajustar tamaño en móviles sin apilar columnas */
 @media (max-width: 480px) {
   .footer {
@@ -72,3 +78,70 @@
   }
 }
 
+
+/* ===== MAPA FOOTER ===== */
+.map-link {
+  display: inline-block;
+  width: 100%;
+  max-width: 150px;   /* 🔑 más chico */
+  margin-top: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 90px;
+  }
+
+.map-link iframe {
+  width: 100%;
+  height: 150px;      /* 🔑 altura reducida */
+  border: 0;
+  border-radius: 10px;
+  pointer-events: none;
+  filter: grayscale(0.3) contrast(0.9); /* look elegante */
+
+}
+
+/* Texto ubicación */
+.footer-section.ubicacion p {
+  font-size: 13px;
+  margin-top: 6px;
+  opacity: 0.85;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+.map-link {
+  max-width: 130px;   /* 🔑 más chico */
+  margin: 8px auto;
+  max-height: 77px;
+}
+
+
+.map-link iframe {
+  width: 140px;
+  height: 145px;      /* 🔑 altura reducida */
+
+}
+
+}
+
+
+
+
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
+}

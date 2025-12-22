@@ -1,41 +1,81 @@
-import { useRef, useState, useEffect } from "react";
+import { FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import "../Footer.css";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        {/* Redes sociales */}
+
+        {/* Contacto */}
         <div className="footer-section redes">
-          <h4>Contacto</h4>
+          <h4>Escribinos por:</h4>
+
           <div className="social-icons">
-            <a href="https://instagram.com/tuusuario" target="_blank" rel="noreferrer">Instagram</a>
-            <a href="https://wa.me/tu_numero" target="_blank" rel="noreferrer">Whatsapp</a>
-            <a href="mailto:tuemail@gmail.com">Gmail</a>
+            <a
+              href="https://instagram.com/tuusuario"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </a>
+
+            <a
+              href="https://wa.me/tu_numero"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="WhatsApp"
+            >
+              <FaWhatsapp />
+            </a>
+
+            <a
+              href="mailto:tuemail@gmail.com"
+              aria-label="Email"
+            >
+              <FaEnvelope />
+            </a>
           </div>
         </div>
 
-        {/* Ubicación */}
-        <div className="footer-section ubicacion">
-          <h4>Ubicación</h4>
-          <p>Buenos Aires, Argentina</p>
-        </div>
+     
 
-        {/* Enlaces rápidos */}
+        {/* Enlaces */}
         <div className="footer-section enlaces">
-          
           <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#galeria">Galería</a></li>
-            
           </ul>
         </div>
+
+
+
+   {/* Ubicación */}
+        <div className="footer-section ubicacion">
+         {/* <h4>Ubicación</h4>*/}
+
+          <a
+            href="https://www.google.com/maps?q=-34.7609,-58.3976"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="map-link"
+          >
+            <iframe
+              src="https://www.google.com/maps?q=-34.7609,-58.3976&z=15&output=embed"
+              loading="lazy"
+              title="Ubicación Lomas de Zamora"
+            />
+          </a>
+
+          <p>Lomas de Zamora, Buenos Aires</p>
+        </div>
+
+
       </div>
 
-      {/* Derechos de autor */}
       <div className="footer-bottom">
-        <p>© 2025 Look Producciones. Todos los derechos reservados. </p>
+        <p>© 2025 Look Producciones. Todos los derechos reservados.</p>
       </div>
     </footer>
   );
