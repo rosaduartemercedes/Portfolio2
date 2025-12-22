@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "../Faq.css";
 
-
 const faqs = [
   { question: "¿Qué servicios ofrecen exactamente?", answer: "Ofrecemos cobertura de eventos y books de moda, incluyendo fotografía, video y edición profesional. Entregamos el material en formato digital y, si se desea, en físico." },
   { question: "¿Cuánto tiempo antes debo reservar?", answer: "Recomendamos reservar con al menos 2-3 semanas de anticipación para asegurar disponibilidad, especialmente en fechas de alta demanda." },
@@ -32,15 +31,18 @@ export default function FAQSection() {
             <div
               key={index}
               className={`faq-item ${openIndex === index ? "open" : ""}`}
-              onClick={() => toggleFAQ(index)}
             >
-              <div className="faq-question">
+              <div
+                className="faq-question"
+                onClick={() => toggleFAQ(index)}
+              >
                 <h3>{faq.question}</h3>
                 <span>{openIndex === index ? "−" : "+"}</span>
               </div>
-              {openIndex === index && (
+
+              <div className="faq-answer-wrapper">
                 <p className="faq-answer">{faq.answer}</p>
-              )}
+              </div>
             </div>
           ))}
         </div>
