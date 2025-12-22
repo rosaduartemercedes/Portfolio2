@@ -51,9 +51,16 @@ export default function App() {
 
 
 
+useEffect(() => {
+  if (!loading) {
+    window.scrollTo(0, 0);
+  }
+}, [loading]);
+
 
   return (
-    <main style={{ padding: 20 }}>
+    <main className="gallery-page">
+
       {/*<h1>Galería</h1>*/}
 
       {/* Loader */}

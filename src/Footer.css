@@ -72,10 +72,3 @@
   }
 }
 
-
-/* Opcional: ajustar tamaño en móviles sin apilar columnas */
-@media (max-width: 780px) {
-  .footer {
-   margin-top: -29%;
-  }
-}

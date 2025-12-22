@@ -83,12 +83,10 @@
   }
   .contact-section{
     margin-top: -25%; 
-    padding-bottom: 17%;
+    padding-bottom: 35%;
   }
 
 .contact-container {
-  
- transform: translateY(-14%); 
   padding: 0%;
   height: 380px;
 }

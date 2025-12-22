@@ -174,7 +174,11 @@ text-shadow:
   .gallery {
     column-count: 2;
     column-gap: 12px;
+
+margin-top: 10%;  
+margin-bottom: 5%;
   }
+
 }
 
 /* Celulares chicos */
@@ -182,4 +186,9 @@ text-shadow:
   .gallery {
     column-count: 2;
   }
+}
+
+
+.gallery-page {
+  padding: 20px;
 }
