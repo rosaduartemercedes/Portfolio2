@@ -82,11 +82,12 @@
     justify-content: center;
   }
   .contact-section{
-    transform: translateY(-20%); 
+    margin-top: -25%; 
+    padding-bottom: 17%;
   }
 
 .contact-container {
-
+  
  transform: translateY(-14%); 
   padding: 0%;
   height: 380px;

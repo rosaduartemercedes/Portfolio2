@@ -92,7 +92,8 @@
 /* ===== MOBILE ===== */
 @media (max-width: 780px) {
 .faq-section {
-  margin-top: -20%;
+  margin-top: -10%;
+  padding-top: 5px;
 }
 
 }
