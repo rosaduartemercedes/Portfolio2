@@ -4,8 +4,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Trykker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC:wght@400..700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;   /* 👈 FIX: evita overflow */
@@ -99,12 +98,10 @@ margin-top: -7%;
   overflow-x: hidden;
   padding-bottom: 3%;
   padding-top: 2%;
-  font-family: "Baskervville SC", serif;
+  font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
-
-  
 }
 
 .small-card-video {
@@ -226,10 +223,10 @@ margin-top: 2%;
   }
 
   .cards-container-video {
-    gap: 4% !important;
+    gap: 8% !important;
   }
   .grid-container {
-    margin-top: 17%;
+    margin-top: 15%;
 
   }
   .text-box-video h1 {

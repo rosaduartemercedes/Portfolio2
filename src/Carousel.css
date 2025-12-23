@@ -163,13 +163,14 @@
  margin-bottom: 3%;
 }
 
-.text-box-carousel h2 {
+.text-box-carousel h1 {
   text-align: center;   /* CENTRA EL TÍTULO */
   width: 100%;
     font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin-top: 30%;
+  font-size:xx-large;
 }
 
 /* TEXTO */

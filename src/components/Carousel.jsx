@@ -33,7 +33,7 @@ useEffect(() => {
   return (
     <div className="carousel-wrapper">
       <div className="text-box-carousel">
-        <h2>Fotografía</h2>
+        <h1>Fotografía</h1>
         <p>Cobertura de books de moda, eventos sociales y empresariales.</p>
 
         <Link to="/fotos" className="gallery-btn">
