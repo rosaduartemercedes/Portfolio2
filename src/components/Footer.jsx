@@ -1,7 +1,7 @@
 import { FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import "../Footer.css";
 
-export default function Footer() {
+export default function Footer({ openGalleryModal }){
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -14,7 +14,23 @@ export default function Footer() {
           <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#galeria">Galería</a></li>
+            
+<li>
+  <a
+    href="/fotos"
+    onClick={(e) => {
+      e.preventDefault();
+      openGalleryModal();
+    }}
+  >
+    Galería
+  </a>
+</li>
+
+
+
+
+
             <li><a href="#Faq">Preguntas Frecuentes</a></li>
             
           </ul>

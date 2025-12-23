@@ -1,6 +1,6 @@
 .footer {
   background-color: #333;
-  color: #fff;
+  color: #a8a8a8;
   padding: 10px 0;
   font-size: 0.9rem;
   margin-top: -7%;
@@ -40,7 +40,7 @@
 }
 
 .footer-section ul li a {
-  color: #fff;
+  color: #a8a8a8;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -70,7 +70,7 @@
 }
 
 .social-icons a {
-  color: #fff;
+  color: #d7d7d7;
   text-decoration: none;
   font-size: 2.4rem;
   transition: transform 0.2s ease, opacity 0.2s ease;
@@ -169,7 +169,7 @@
 
   .footer-section.redes,
   .footer-section.ubicacion {
-    border-left: 2px solid #fff;
+    border-left: 2px solid #a8a8a8;
     padding-left: 20px;
   }
 

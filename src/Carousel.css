@@ -24,14 +24,14 @@
   display: inline-flex;
   align-self: center;
   margin-top: 7%;
-  
+  border-style: none;
 }
 
 /* Hover para desktop */
 .gallery-btn:hover {
   transform: translateY(-2px) scale(1.03);
   background: linear-gradient(135deg, #374151, #1f2937);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.45);
 }
 
 /* Click */

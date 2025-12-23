@@ -1,0 +1,100 @@
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
+.galeria-container-landing {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+/* =========================
+   BLOQUE SUPERIOR (2 COL)
+========================= */
+.landing-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 60px;
+}
+
+/* =========================
+   TEXTO
+========================= */
+.galeria-header-landing h1 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.galeria-header-landing p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.text-box-video-landing {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* =========================
+   CONTENEDOR DE CARDS
+========================= */
+.cards-container-video-landing {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 2% 0 3%;
+}
+
+/* =========================
+   CARD POLAROID
+========================= */
+.small-card-video-landing {
+  width: 140px;
+  background: #ffffff;
+  padding: 0;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  border-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.small-card-video-landing:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 20px rgba(255, 245, 104, 0.8);
+}
+
+/* =========================
+   CONTENIDO CARD
+========================= */
+.small-card-video-landing img {
+  width: 100%;
+  height: 65px;
+  object-fit: contain;
+  margin-top: 6%;
+}
+
+.small-card-video-landing h4 {
+  font-size: 1rem;
+  color: #383838;
+  margin: 10% 0;
+}
+
+/* =========================
+   CARD ACTIVA
+========================= */
+.small-card-video-landing.active {
+  outline: 2px solid #ffff5e46;
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 20px rgba(255, 245, 104, 0.8);
+}

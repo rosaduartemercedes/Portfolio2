@@ -27,7 +27,7 @@ useEffect(() => {
     <section className="galeria-container">
       <header className="galeria-header">
         <h1>Cumpleaños</h1>
-        <p>Algunos de nuestros trabajos en cobertura de cumpleaños.</p>
+        <p>Algunos cortos de nuestros trabajos en cobertura de fiestas.</p>
       </header>
 
       <div className="videos-grid">

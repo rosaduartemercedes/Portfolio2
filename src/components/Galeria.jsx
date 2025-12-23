@@ -9,10 +9,8 @@ export default function App() {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [prevIndex, setPrevIndex] = useState(null);
   const [slideDirection, setSlideDirection] = useState(null);
-
-
-const BATCH_SIZE = 30;
-const [visiblePhotos, setVisiblePhotos] = useState([]);
+  const BATCH_SIZE = 30;
+  const [visiblePhotos, setVisiblePhotos] = useState([]);
 
 
 

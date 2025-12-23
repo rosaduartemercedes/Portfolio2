@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "../Navbar.css";
 
 
-export default function Navbar() {
+export default function Navbar({ openGalleryModal }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("inicio");
   const navigate = useNavigate();
@@ -83,18 +83,19 @@ export default function Navbar() {
             Inicio
           </a>
         </li>
-        <li>
-          <a
-            href="#galeria"
-            className={activeSection === "galeria" ? "active-link" : ""}
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("galeria");
-            }}
-          >
-            Galería
-          </a>
-        </li>
+       <li>
+  <a
+    href="/fotos"
+    onClick={(e) => {
+      e.preventDefault();
+      openGalleryModal();
+      setMenuOpen(false);
+    }}
+  >
+    Galería
+  </a>
+</li>
+
         <li>
           <a
             href="#contacto"

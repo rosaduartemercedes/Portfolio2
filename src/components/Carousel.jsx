@@ -3,9 +3,10 @@ import "../Carousel.css";
 import cameraIcon from "../assets/camara.png";
 import { Link } from "react-router-dom";
 
-export default function Carousel() {
+export default function Carousel({ openGalleryModal })  {
   const [images, setImages] = useState([]);
   const [index, setIndex] = useState(0);
+  
 
 useEffect(() => {
   fetch("https://mi-galeria-back.vercel.app/api/gallery")
@@ -36,10 +37,13 @@ useEffect(() => {
         <h1>Fotografía</h1>
         <p>Cobertura de books de moda, eventos sociales y empresariales.</p>
 
-        <Link to="/fotos" className="gallery-btn">
-          <img src={cameraIcon} alt="camera" className="camera-icon" />
-          Abrir galería
-        </Link>
+       <button
+  className="gallery-btn"
+  onClick={openGalleryModal}
+>
+  <img src={cameraIcon} alt="camera" className="camera-icon" />
+  Abrir galería
+</button>
       </div>
 
      <div className="carousel-container">
