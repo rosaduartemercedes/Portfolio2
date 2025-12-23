@@ -6,9 +6,24 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-content">
 
-        {/* Contacto */}
+      
+
+
+   {/* Enlaces */}
+        <div className="footer-section enlaces">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#Faq">Preguntas Frecuentes</a></li>
+            
+          </ul>
+        </div>
+
+
+          {/* Contacto */}
         <div className="footer-section redes">
-          <h4>Escribinos por:</h4>
+       
 
           <div className="social-icons">
             <a
@@ -38,18 +53,6 @@ export default function Footer() {
           </div>
         </div>
 
-     
-
-        {/* Enlaces */}
-        <div className="footer-section enlaces">
-          <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#galeria">Galería</a></li>
-          </ul>
-        </div>
-
-
 
    {/* Ubicación */}
         <div className="footer-section ubicacion">
@@ -71,8 +74,13 @@ export default function Footer() {
           <p>Lomas de Zamora, Buenos Aires</p>
         </div>
 
+    
+
 
       </div>
+
+      
+     
 
       <div className="footer-bottom">
         <p>© 2025 Look Producciones. Todos los derechos reservados.</p>
