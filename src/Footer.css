@@ -1,10 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+
+
 .footer {
   background-color: #333;
   color: #a8a8a8;
   padding: 10px 0;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-top: -7%;
   padding-bottom: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  text-align: center;
   box-sizing: border-box;
 }
 
@@ -100,6 +110,7 @@
   border-radius: 10px;
   overflow: hidden;
   max-height: 90px;
+ 
 }
 
 .map-link iframe {
@@ -109,12 +120,16 @@
   border-radius: 10px;
   pointer-events: none;
   filter: grayscale(0.3) contrast(0.9);
+  
 }
 
 .footer-section.ubicacion p {
   font-size: 13px;
   margin-top: 6px;
   opacity: 0.85;
+  
+
+  
 
 }
 
@@ -187,9 +202,6 @@
   }
 
   
-.footer-section.ubicacion p {
-  margin-left: 100px;
-}
 
 }
 

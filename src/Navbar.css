@@ -23,6 +23,10 @@
   width: 100%;
   top: 0;
   z-index: 1000;
+    font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  text-align: center;
   box-sizing: border-box;
 }
 
@@ -121,15 +125,12 @@
     align-items: center;
     padding: 10px 10px;
     text-align: center;
-  }
-}
-
-.nav-links li a {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+}
 
 
 
