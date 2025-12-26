@@ -40,7 +40,7 @@ export default function HeroVideo() {
         </p>
 
         <div className="cards-container-video">
-          <Link to="/bodas" className="small-card-video">
+         {/* <Link to="/bodas" className="small-card-video">
             <img src={card1} alt="Casamientos" />
             <h4>Casamientos</h4>
           </Link>
@@ -53,7 +53,36 @@ export default function HeroVideo() {
           <Link to="/cumple" className="small-card-video">
             <img src={card3} alt="Cumpleaños" />
             <h4>Cumpleaños</h4>
-          </Link>
+          </Link>*/}
+        
+        
+        <Link
+  to="/videos"
+  state={{ evento: "boda" }}
+  className="small-card-video"
+>
+  <img src={card1} alt="Casamientos" />
+  <h4>Casamientos</h4>
+</Link>
+
+<Link
+  to="/videos"
+  state={{ evento: "moda" }}
+  className="small-card-video"
+>
+  <img src={card2} alt="Backstages" />
+  <h4>Backstages</h4>
+</Link>
+
+<Link
+  to="/videos"
+  state={{ evento: "cumple" }}
+  className="small-card-video"
+>
+  <img src={card3} alt="Cumpleaños" />
+  <h4>Cumpleaños</h4>
+</Link>
+        
         </div>
       </div>
     </div>
