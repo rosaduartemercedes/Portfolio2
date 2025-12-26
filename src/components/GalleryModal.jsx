@@ -12,7 +12,7 @@ export default function GalleryModal({ open, onClose }) {
         className="gallery-modal"
         onClick={(e) => e.stopPropagation()}
       >
-        <h3>¿Qué querés ver?</h3>
+        <h3>Elegí una galería:</h3>
 
         <div className="gallery-options">
           <button

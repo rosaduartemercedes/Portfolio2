@@ -141,6 +141,8 @@ if (loading) {
       <div className="videos-wrapper">
         <div className="videos-grid">
         {loadingEvento && (
+  
+  
   <div className="loader loader-inline">
     <div className="spinner"></div>
     <p>Cargando evento...</p>
