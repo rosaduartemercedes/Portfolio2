@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import "../Gallery.css";
+import Masonry from "react-masonry-css";
+import { ProgressBar } from "react-loader-spinner";
 
 export default function App() {
   const [photos, setPhotos] = useState([]);
@@ -129,19 +131,35 @@ useEffect(() => {
 }, [selectedIndex]);
 
 
-
+const breakpointColumnsObj = {
+  default: 5,
+  1400: 4,
+  1100: 3,
+  700: 2,
+  500: 2
+};
 
 
   return (
     <main className="gallery-page">
-      {loading && (
-        <div className="loader">
-          <div className="spinner"></div>
-          <p>Cargando galería...</p>
-        </div>
-      )}
+   {loading && (
+  <div className="loader-wrapper">
+    <ProgressBar
+      height="120"
+      width="120"
+      borderColor="#ddd"
+      barColor="#48bf3b"
+      ariaLabel="loading"
+    />
+    <p className="loader-text" >Cargando galería...</p>
+  </div>
+)}
 
- <div className="gallery">
+ <Masonry
+  breakpointCols={breakpointColumnsObj}
+  className="masonry-grid"
+  columnClassName="masonry-column"
+>
   {visiblePhotos.map((photo, index) => (
     <img
       key={photo.id}
@@ -152,7 +170,7 @@ useEffect(() => {
       onClick={() => setSelectedIndex(index)}
     />
   ))}
-</div>
+</Masonry>
 
      {selectedIndex !== null && (
   <div className="lightbox" {...swipeHandlers} onClick={closeLightbox}>

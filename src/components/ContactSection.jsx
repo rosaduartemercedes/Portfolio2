@@ -22,13 +22,13 @@ export default function ContactSection() {
         <div className="contact-links">
           
           <a
-            href="https://instagram.com/produccionesboyer"
+            href="https://www.instagram.com/produccioneslook/"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-item"
           >
             <img src={instagram} className="icon-img" />
-            <span>Instagram: @LookProducciones</span>
+            <span>Instagram: @produccioneslook</span>
           </a>
 
           <a
@@ -42,11 +42,11 @@ export default function ContactSection() {
           </a>
 
           <a
-            href="mailto:consultas@produccionesboyer.com"
+            href="mailto:produccionesaudiovisualeslook@gmail.com"
             className="contact-item"
           >
             <img src={gmail1} className="icon-img" />
-            <span>Email: lookproducciones@gmail.com</span>
+            <span>Email: produccionesaudiovisualeslook@gmail.com</span>
           </a>
         </div>
       </div>

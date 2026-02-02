@@ -15,7 +15,7 @@
 
 /* Contenedor principal */
 .contact-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
   padding: 0 20px;
   display: grid;
@@ -51,19 +51,20 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-      font-family: "Google Sans Flex", sans-serif;
+  font-family: "Google Sans Flex", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   text-align: center;
   box-sizing: border-box;
+  
 }
 
 /* Cada tarjeta de contacto */
 .contact-item {
+  
   display: flex;
   align-items: center;
   gap: 15px;
-
   background-color: #1f1f1f;
   padding: 16px;
   border-radius: 12px;

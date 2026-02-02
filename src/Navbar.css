@@ -6,8 +6,8 @@
 .logo-img {
   background-size: contain;
   background-repeat: no-repeat;
-  width: 75px;
-  height: 45px;
+  width: 65px;
+  height: 30px;
   transform: translateX(-20%);
   transform: translateY(9%);
 }
@@ -17,10 +17,14 @@
   align-items: center;
   height: 50px;              /* 🔹 ALTURA FIJA */
   padding: 0 20px;           /* 🔹 padding vertical en 0 */
-  background-color: #000000;
-  color: #fff;
+
+
+
+background: linear-gradient(0deg,rgb(80, 94, 94) 0%, rgba(0, 0, 0, 1) 50%);
+  
+  
   position: fixed;
-  width: 100%;
+width: 100%;
   top: 0;
   z-index: 1000;
     font-family: "Google Sans Flex", sans-serif;
@@ -28,6 +32,8 @@
   font-weight: 400;
   text-align: center;
   box-sizing: border-box;
+    border-bottom: 1px solid #525050;
+  
 }
 
 .nav-links {
@@ -35,6 +41,7 @@
   list-style: none;
   gap: 0;                    /* 🔹 el espacio ahora lo da el padding del <a> */
   margin-left: auto;
+ 
 }
 
 /* Links */
@@ -47,10 +54,11 @@
   text-decoration: none;
   font-weight: 500;
   transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
 .nav-links li a:hover {
-  background-color: rgba(127, 132, 135, 0.433);
+  background-color: rgba(255, 255, 255, 0.255);
   color: #ffcc00;
 }
 

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
 
+.loader-text {
+ font-family: "Google Sans Flex", sans-serif;
+}
+
 
 /* =========================
    CONTENEDOR GENERAL
@@ -9,6 +13,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 24px;
+  margin-bottom: 3%;
 }
 
 /* =========================
@@ -188,7 +193,7 @@ margin-bottom: 2%;
     order: 2;
     gap: 15px;
     padding: 0;
-    width: ;
+    
   }
 
   .galeria-header-landing {

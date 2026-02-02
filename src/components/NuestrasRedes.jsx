@@ -9,7 +9,7 @@ export default function NuestrasRedes() {
 
         {/* Instagram */}
         <a 
-          href="https://www.instagram.com/produccionesboyer"
+          href="https://www.instagram.com/produccioneslook/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center gap-3 social-item"

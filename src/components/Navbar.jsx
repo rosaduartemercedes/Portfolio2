@@ -80,7 +80,7 @@ export default function Navbar({ openGalleryModal }) {
               scrollToSection("inicio");
             }}
           >
-            Inicio
+            Servicios
           </a>
         </li>
        <li>

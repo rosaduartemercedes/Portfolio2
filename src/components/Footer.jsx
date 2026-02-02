@@ -12,9 +12,9 @@ export default function Footer({ openGalleryModal }){
    {/* Enlaces */}
         <div className="footer-section enlaces">
           <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            
+            <li><a href="#inicio">Servicios</a></li>
+{ //           <li><a href="#servicios">Servicios</a></li>
+}            
 <li>
   <a
     href="/fotos"
@@ -26,11 +26,6 @@ export default function Footer({ openGalleryModal }){
     Galería
   </a>
 </li>
-
-
-
-
-
             <li><a href="#Faq">Preguntas Frecuentes</a></li>
             
           </ul>
@@ -43,7 +38,7 @@ export default function Footer({ openGalleryModal }){
 
           <div className="social-icons">
             <a
-              href="https://instagram.com/tuusuario"
+              href="https://www.instagram.com/produccioneslook/"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
@@ -61,7 +56,7 @@ export default function Footer({ openGalleryModal }){
             </a>
 
             <a
-              href="mailto:tuemail@gmail.com"
+              href="mailto:produccionesaudiovisualeslook@gmail.com"
               aria-label="Email"
             >
               <FaEnvelope />
