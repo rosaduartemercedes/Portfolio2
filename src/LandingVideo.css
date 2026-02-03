@@ -85,7 +85,8 @@
    CARD POLAROID
 ========================= */
 .small-card-video-landing {
-  width: 100px;
+  width: 120px;
+  height: 110px;
   background: #ffffff;
   padding: 0;
   border-radius: 2px;
@@ -109,10 +110,10 @@
    CONTENIDO CARD
 ========================= */
 .small-card-video-landing img {
-  width: 95px;
-  height: 50px;
-  object-fit: contain;
-  margin-top: 6%;
+  width: 90px;
+  height: 55px;
+  object-fit: cover;
+  margin-top: 10px;
 }
 
 .small-card-video-landing h4 {

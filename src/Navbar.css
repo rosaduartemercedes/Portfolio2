@@ -52,7 +52,7 @@ width: 100%;
   padding: 0 25px;           /* 🔹 ancho del hover */
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 300;
   transition: background-color 0.3s ease, color 0.3s ease;
 
 }

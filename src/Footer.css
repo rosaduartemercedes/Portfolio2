@@ -38,9 +38,13 @@
   padding-bottom: 0;
 }
 
+
+
 .footer-section p,
 .footer-section ul li {
   margin: 0;
+  margin-top: 15px;
+  
 }
 
 .footer-section ul {

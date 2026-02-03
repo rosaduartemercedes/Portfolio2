@@ -108,6 +108,24 @@ export default function Navbar({ openGalleryModal }) {
             Contacto
           </a>
         </li>
+
+
+
+        <li>
+          <a
+            href="#Faq"
+            className={activeSection === "Faq" ? "active-link" : ""}
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("Faq");
+            }}
+          >
+            Preguntas Frecuentes
+          </a>
+        </li>
+
+
+
       </ul>
 
       {/* hamburguesa toggle */}

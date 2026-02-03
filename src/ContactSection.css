@@ -57,7 +57,9 @@
   text-align: center;
   box-sizing: border-box;
   
+  
 }
+
 
 /* Cada tarjeta de contacto */
 .contact-item {
@@ -77,6 +79,7 @@
 /* Hover */
 .contact-item:hover {
   background-color: #333;
+  
 }
 
 /* Íconos: más chicos y proporcionados */
@@ -89,7 +92,8 @@
 /* Texto de cada enlace */
 .contact-item span {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 /* RESPONSIVE */
@@ -100,7 +104,7 @@
   }
 
   .contact-item {
-    justify-content: center;
+    justify-content: start;
   }
   .contact-section{
     margin-top: -25%; 
@@ -108,8 +112,14 @@
   }
 
 .contact-container {
-  padding: 0%;
+  padding: 15px;
   height: 380px;
+}
+
+.contact-item span {
+  font-size: 20px;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 }

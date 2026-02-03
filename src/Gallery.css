@@ -202,25 +202,29 @@ text-shadow:
 }
 
 
+  .masonry-grid {
+    margin-top: 7%;
+  }
+
 }
 
 /* Celulares grandes */
 @media (max-width: 600px) {
-  .gallery {
-    column-count: 2;
-    column-gap: 12px;
+  
 
-margin-top: 10%;  
-margin-bottom: 5%;
+  .masonry-grid {
+    margin-top: 10%;
   }
 
 }
 
 /* Celulares chicos */
 @media (max-width: 400px) {
- 
+  .gallery {
+    column-count: 2;
+  }
   .masonry-grid {
-    margin-top: 13%;
+    margin-top: 15%;
   }
 }
 

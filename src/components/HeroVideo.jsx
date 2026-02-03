@@ -23,8 +23,8 @@ export default function HeroVideo() {
       <div className="video-box">
 
         <video
-          src="https://res.cloudinary.com/dyddy7avc/video/upload/v1766511600/Corto_2_1_1_siaosy.mp4"
-          poster="https://res.cloudinary.com/dyddy7avc/video/upload/so_0/Corto_2_1_1_siaosy.jpg"
+          src="https://res.cloudinary.com/dyddy7avc/video/upload/v1770102032/landing_prueba_2_nkcltq.mp4"
+          
           preload="metadata"
           controls
           playsInline

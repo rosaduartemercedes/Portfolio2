@@ -27,9 +27,18 @@ export default function Footer({ openGalleryModal }){
   </a>
 </li>
             <li><a href="#Faq">Preguntas Frecuentes</a></li>
+
+
+
+           
             
           </ul>
         </div>
+
+
+
+
+
 
 
           {/* Contacto */}
