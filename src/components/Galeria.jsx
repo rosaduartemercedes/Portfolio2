@@ -142,6 +142,33 @@ const breakpointColumnsObj = {
 
   return (
     <main className="gallery-page">
+   
+   
+   <div className="grilla2"> 
+  
+  <div>
+<h1>Fotografía</h1>
+<p>Conoce un poco más sobre nuestro trabajo. Una imagen dice mas que mil palabras...</p>
+</div>
+
+<div className="btns">
+ <button className="btn-btn1">
+    
+¡Quiero agendar una fecha!
+</button>
+
+
+
+<button className="btn-btn3">
+    
+Tengo otra consulta
+</button>
+
+</div>
+
+  </div>
+
+   
    {loading && (
   <div className="loader-wrapper">
     <ProgressBar
@@ -154,7 +181,8 @@ const breakpointColumnsObj = {
     <p className="loader-text" >Cargando galería...</p>
   </div>
 )}
-
+  
+ 
  <Masonry
   breakpointCols={breakpointColumnsObj}
   className="masonry-grid"

@@ -24,7 +24,7 @@
 .whatsapp-tooltip {
   position: absolute;
   right: 70px;              /* Ubicado a la izquierda del ícono */
-  background: white;
+  background: rgba(253, 247, 209, 0.797);
   padding: 8px 12px;
   border-radius: 8px;
   font-size: 14px;

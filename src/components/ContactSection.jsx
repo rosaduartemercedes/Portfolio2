@@ -10,11 +10,15 @@ export default function ContactSection() {
         
         {/* TEXTO IZQUIERDA */}
         <div id="contacto" className="contact-text">
-          <h2>Hablemos de tu proyecto</h2>
+          <h2> Hablemos de tu proyecto  </h2> 
 
           <p>
-            Contanos tu idea. Estamos acá para ayudarte a crear contenido visual
+            Sacate las dudas y contanos tu idea. Estamos acá para ayudarte a crear contenido visual
             profesional de alta calidad.
+            
+            <br></br> <br></br>
+            
+             Podes hacerlo atravéz de cualquiera de nuestros canales de atención.
           </p>
         </div>
 

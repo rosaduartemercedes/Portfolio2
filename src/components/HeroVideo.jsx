@@ -34,9 +34,9 @@ export default function HeroVideo() {
       </div>
 
       <div className="text-box-video">
-        <h1>VIDEO Y EDICIÓN</h1>
+        <h1>Tu historia en video</h1>
         <p>
-          Ofrecemos una solución personalizada para cada ocasión y adaptada a tus necesidades.
+         Creamos piezas visuales únicas que se adaptan exactamente a lo que buscás. Desde coberturas de eventos hasta contenido para marcas, transformamos tus ideas en videos de alta calidad.
         </p>
 
         <div className="cards-container-video">

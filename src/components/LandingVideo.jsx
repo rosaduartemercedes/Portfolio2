@@ -36,8 +36,24 @@ export default function LandingVideo() {
       <div className="landing-top">
         <header className="galeria-header-landing">
           <h1>Video y edición</h1>
-          <p>Algunos cortos de nuestros trabajos.</p>
+          <p>Algunos cortos de nuestros trabajos. <br></br>¿Consultas? ¡Escribínos! 🗓️ Agenda 2026 abierta. </p>
+          
+         <div className="line"> 
+          <button className="video-btn1">
+    
+Consultános 📲
+</button>
+
+          <button className="video-btn2">
+    
+Reservar fecha
+</button>
+</div>
+
         </header>
+
+
+
 
         <div className="text-box-video-landing">
           <p>Selecciona el evento que prefieras y mira los videos.</p>

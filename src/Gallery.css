@@ -6,7 +6,7 @@
 .masonry-grid {
   display: flex;
   margin-left: -16px; /* espacio entre columnas */
-  margin-top: 4%;
+  margin-top: 2%;
   margin-bottom: 6%;
 
 }
@@ -24,7 +24,83 @@
   
 }
 
+.grilla2{
+  display: flex;
+}
 
+
+
+
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 10%;
+  margin-top: 60px;
+}
+
+
+p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  text-align: center;
+  
+} 
+
+
+.btn-btn1{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: linear-gradient(#e3d59d, #805f05);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, background 0.25s ease;
+  width: fit-content;
+  align-self: center;
+  margin-top: 88px;
+  border-style: none;
+  margin-left: 140px;}
+
+
+
+.btn-btn3{display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: linear-gradient(#c7c8c8, #0d1b39);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, background 0.25s ease;
+  width: fit-content;
+  align-self: center;
+  margin-top: 95px;
+  border-style: none;
+  margin-left: 90px;}
+
+  .btn-btn1{
+  background: linear-gradient(#75e64c, #093d1b);  
+}
+.btn-btn3{
+  background: linear-gradient(#c7c8c8, #0d1b39);
+}
 
 .loader-wrapper {
   min-height: 60vh;
@@ -37,10 +113,24 @@
 
 
 
+.btn-btn3:hover,
+ .btn-btn2:hover,
+ .btn-btn1:hover{
+  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(135deg, #374151, #1f2937);
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.45);
+}
 
 
 
 
+  .btns{
+  display: flex;
+  flex-direction: row;
+align-content: center;
+justify-content: center;
+
+}
 
 
 
@@ -189,7 +279,25 @@ text-shadow:
   .gallery {
     column-count: 5;
   }
+
+.btn-btn1 {
+  font-size: 12px;;
+  width: 190px;
+margin-left: 10px;
+height: 40px;
 }
+
+.btn-btn3{
+  font-size: 12px;
+  width: 190px;
+  height: 40px;
+}
+
+
+}
+
+
+
 
 /* Tablets chicas */
 @media (max-width: 900px) {
@@ -201,10 +309,35 @@ text-shadow:
   left: 350px;
 }
 
+.btns{
+
+gap: 10%;
+margin-top: 20px;
+}
 
   .masonry-grid {
-    margin-top: 7%;
+    margin-top: 5%;
   }
+
+  
+.btn-btn1,
+.btn-btn3{
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
+
+.grilla2{
+  display: flex;
+flex-direction: column;
+
+}
+
+
+h1 {
+  margin-left: 10px;
+ 
+}
 
 }
 

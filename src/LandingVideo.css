@@ -6,6 +6,54 @@
 }
 
 
+.line{
+  display: flex;
+}
+.video-btn2,
+.video-btn1{
+  
+ display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius:12px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, background 0.25s ease;
+  width: fit-content;
+  display: inline-flex;
+  align-self: center;
+  margin-top: 7%;
+  border-style: none;
+  margin-left: 20px;
+}
+.video-btn2{
+  background: linear-gradient(#75e64c, #093d1b);  
+  margin-left: 70px;
+}
+
+.video-btn2:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(135deg, #dcd753, #897a17);
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.45);
+}
+
+
+.video-btn1{
+   background: linear-gradient(#c7c8c8, #0d1b39);
+   margin-left: 20px;
+  }
+
+.video-btn1:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(135deg, #615e53, #282623);
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.45);
+}
+
 /* =========================
    CONTENEDOR GENERAL
 ========================= */
@@ -24,7 +72,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: start;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 /* =========================
@@ -36,12 +84,13 @@
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin-left: 10%;
+  margin-left: 67px;
+  margin-top: -45px;
 }
 
 
 .galeria-header-landing {
-  margin-top: 9%;
+  margin-top: 8%;
   margin-left: 20%;
 }
 
@@ -182,8 +231,88 @@
     
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 408px){
+
+  .small-card-video-landing {
+  
+margin: 0px!important;
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   CARD POLAROID
+========================= */
+.small-card-video-landing {
+  width: 110px;
+ gap: 3px;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
- .landing-top {
+
+.video-btn1,
+.video-btn2{
+  font-size: 12px;
+  
+}
+
+
+
+
+
+
+
+
+
+.small-card-video-landing{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+  .landing-top {
   display: grid;
     grid-template-columns: 1fr;
 margin-bottom: 2%;
@@ -200,14 +329,88 @@ margin-bottom: 2%;
   .galeria-header-landing {
     margin: 0;
  order: 1;
+ margin-top: 10px;
+ 
       
     
   }
 
-  .galeria-header-landing h1 {
-    margin-left: 6%;
-    margin-top: 5%;
-    margin-bottom: 0%;
+  
+  .galeria-container-landing {
+    padding: 10px;
+      margin-top: 30px;
+
+ padding-bottom: 30px;   
   }
+
+  .galeria-header-landing h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin: 0%;
+  }
+
+
+
+
+
+
+
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  margin-bottom: 25px;
+  margin-top: -30px;
+   
+  
+}
+
+
+
+
+
+/* =========================
+   CONTENEDOR DE CARDS
+========================= */
+.cards-container-video-landing {
+  
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

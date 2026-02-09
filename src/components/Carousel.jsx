@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "../Carousel.css";
 import cameraIcon from "../assets/camara.png";
 import { Link } from "react-router-dom";
+import calendarIcon from "../assets/images2.png"
 
 export default function Carousel({ openGalleryModal })  {
   const [images, setImages] = useState([]);
@@ -34,8 +35,10 @@ useEffect(() => {
   return (
     <div className="carousel-wrapper">
       <div className="text-box-carousel">
-        <h1>Fotografía</h1>
-        <p>Cobertura de books de moda, eventos sociales y empresariales.</p>
+        <h1>Reviví cada momento.</h1>
+        <p>Capturamos la esencia. No solo sacamos fotos; diseñamos una solución personalizada para que tus recuerdos se vean increíbles.</p>
+
+<div>
 
        <button
   className="gallery-btn"
@@ -44,6 +47,15 @@ useEffect(() => {
   <img src={cameraIcon} alt="camera" className="camera-icon" />
   Abrir galería
 </button>
+
+
+
+ <button  className="gallery-btn2">
+     <img src={calendarIcon} alt="camera" className="camera-icon" />
+Reserva tu fecha hoy
+</button>
+</div>
+
       </div>
 
      <div className="carousel-container">

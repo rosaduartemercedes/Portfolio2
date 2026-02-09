@@ -98,17 +98,21 @@
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+
   .contact-container {
     grid-template-columns: 1fr;
     text-align: center;
+    justify-content: center;
+    margin-top: -45px;
   }
 
   .contact-item {
     justify-content: start;
+
   }
   .contact-section{
     margin-top: -25%; 
-    padding-bottom: 35%;
+    padding-bottom: 45%;
   }
 
 .contact-container {
