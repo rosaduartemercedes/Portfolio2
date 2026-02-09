@@ -83,8 +83,9 @@ margin-top: -80px;
   line-height: 1.5;
   font-family: "Google Sans Flex", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
   text-align: center;
+  color: #4d4c4f;
+  font-weight: 400;
 }
 
 /* TARJETAS POLAROID */

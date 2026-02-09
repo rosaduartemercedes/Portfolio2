@@ -40,6 +40,8 @@ useEffect(() => {
 
 <div>
 
+
+<div className="btnsl">
        <button
   className="gallery-btn"
   onClick={openGalleryModal}
@@ -50,10 +52,25 @@ useEffect(() => {
 
 
 
- <button  className="gallery-btn2">
+ <button  className="gallery-btn2"
+ 
+  onClick={() =>
+    window.open(
+      "https://wa.me/5491134567890?text=Hola!%20Quiero%20consultar%20por%20su%20agenda%20disponible.",
+      "_blank"
+    )
+  }
+
+ 
+ >
      <img src={calendarIcon} alt="camera" className="camera-icon" />
 Reserva tu fecha hoy
 </button>
+
+
+
+
+</div>
 </div>
 
       </div>

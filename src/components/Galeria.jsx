@@ -15,6 +15,9 @@ export default function App() {
   const [visiblePhotos, setVisiblePhotos] = useState([]);
 
 
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
 
 
   // Cargar fotos
@@ -152,14 +155,33 @@ const breakpointColumnsObj = {
 </div>
 
 <div className="btns">
- <button className="btn-btn1">
+ <button className="btn-btn1" 
+ 
+ 
+  onClick={() =>
+    window.open(
+      "https://wa.me/5491134567890?text=Hola!%20Quiero%20agendar%20una%20producción.",
+      "_blank"
+    )
+  }
+  >
     
 ¡Quiero agendar una fecha!
 </button>
 
 
 
-<button className="btn-btn3">
+<button className="btn-btn3"
+
+
+  onClick={() =>
+    window.open(
+      "https://wa.me/5491134567890?text=Hola!%20Tengo%20una%20consulta...",
+      "_blank"
+    )
+  }
+
+>
     
 Tengo otra consulta
 </button>

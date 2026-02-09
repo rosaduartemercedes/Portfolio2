@@ -12,6 +12,13 @@ export default function LandingVideo() {
   const [eventoActivo, setEventoActivo] = useState(location.state?.evento ?? null);
   const [loading, setLoading] = useState(true);
 
+
+
+  
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
   useEffect(() => {
     setLoading(true); // Cada vez que cambie el evento, activamos el loader
 
@@ -39,12 +46,31 @@ export default function LandingVideo() {
           <p>Algunos cortos de nuestros trabajos. <br></br>¿Consultas? ¡Escribínos! 🗓️ Agenda 2026 abierta. </p>
           
          <div className="line"> 
-          <button className="video-btn1">
+          <button className="video-btn1"
+          
+           onClick={() =>
+    window.open(
+      "https://wa.me/5491134567890?text=Hola!%20Tengo%20una%20consulta:",
+      "_blank"
+    )
+  }
+          
+          >
     
 Consultános 📲
 </button>
 
-          <button className="video-btn2">
+          <button className="video-btn2"
+          
+                     onClick={() =>
+    window.open(
+      "https://wa.me/5491134567890?text=Hola!%20quiero%20reservar%20una%20fecha.",
+      "_blank"
+    )
+  }
+
+          
+          >
     
 Reservar fecha
 </button>
