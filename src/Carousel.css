@@ -240,7 +240,7 @@ background: linear-gradient(0deg,rgb(62, 59, 65) 9%, rgb(3, 2, 3) 47%, rgb(59, 5
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0px;
+  gap: 40px;
   padding: 0px;
   width: 100%;
   max-width: 100%;
@@ -248,7 +248,8 @@ background: linear-gradient(0deg,rgb(62, 59, 65) 9%, rgb(3, 2, 3) 47%, rgb(59, 5
  margin-top: -40px;
  margin-bottom: -95px;
 
- 
+   
+
 
 }
 
@@ -286,8 +287,9 @@ align-items: center;
   font-family: "Google Sans Flex", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-   
-  transform: translateX(-7%); 
+
+
+  
 }
 
 
@@ -299,7 +301,7 @@ align-items: center;
   aspect-ratio: 16 / 9;
   background-color: #71787c84;
   position: relative;
-  margin-left: 7%;
+  margin-left: 0%;
   
   
 }
@@ -497,5 +499,22 @@ margin-bottom: 10px;
   }
     
 
+
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1260px){
+
+.text-box-carousel {
+transform: translateX(-80px);
+  
+}
 
 }
