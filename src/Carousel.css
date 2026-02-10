@@ -247,6 +247,7 @@ background: linear-gradient(0deg,rgb(62, 59, 65) 9%, rgb(3, 2, 3) 47%, rgb(59, 5
   overflow-x: hidden; /* evita que se salga */
  margin-top: -40px;
  margin-bottom: -95px;
+
  
 
 }
@@ -274,7 +275,7 @@ background: linear-gradient(0deg,rgb(62, 59, 65) 9%, rgb(3, 2, 3) 47%, rgb(59, 5
 /* TEXTO */
 .text-box-carousel {
   flex: 1;
-  max-width: 600px;
+  max-width: 700px;
   text-align: center;
 
 margin-top: 0px;
@@ -286,7 +287,7 @@ align-items: center;
   font-optical-sizing: auto;
   font-weight: 400;
    
-  transform: translateX(-8%); 
+  transform: translateX(-7%); 
 }
 
 
@@ -328,7 +329,9 @@ align-items: center;
   /* Evita que el total supere el ancho del viewport */
 .text-box-carousel {
   
-  margin-left: 90px;
+  
+  transform: translateX(0%); 
+
 }
   
 .carousel-container{
