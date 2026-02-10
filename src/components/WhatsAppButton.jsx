@@ -12,7 +12,7 @@ export default function WhatsAppButton() {
       rel="noopener noreferrer"
       className="whatsapp-btn"
     >
-         <span className="whatsapp-tooltip">Reserva tu fecha. <br></br> Clickeá acá 👉 </span>
+         <span className="whatsapp-tooltip">Estamos para asistirte,  <br></br> dejanos tu mensaje 👉</span>
       <div className="whatsapp-icon">
         <img src={wsp} alt="WhatsApp" />
       </div>
