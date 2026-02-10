@@ -8,7 +8,7 @@
 /* Fondo general */
 .contact-section {
   width: 100%;
-  padding: 25px 0;
+  padding: 20px 0;
   background-color: #111; /* gris oscuro */
   color: white;
 }
@@ -20,10 +20,11 @@
   padding: 0 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 200px;
-  align-items: center;
- 
-  
+
+
+
+ justify-items: center;
+
 
 
   
@@ -36,7 +37,7 @@
    font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
-  justify-self: center;
+  justify-self: end;
 }
 
 .contact-text p {
@@ -48,7 +49,7 @@
   font-weight: 400;
   text-align: center;
   box-sizing: border-box;
-  text-align:left;
+  text-align:end;
   margin-left: 0px;
 
 }
@@ -63,6 +64,10 @@
   font-weight: 400;
   text-align: center;
   box-sizing: border-box;
+ margin-left: 50px;
+  justify-self: start;
+
+  justify-content: center;
   
   
 }
@@ -70,7 +75,7 @@
   
 margin-left: 0%;
 margin-top: -40px;
-
+ max-width: 700px;
 
 }
 
@@ -85,8 +90,9 @@ margin-top: -40px;
   border-radius: 12px;
   text-decoration: none;
   color: white;
-  
+  max-width: 450px;
   transition: background-color 0.3s ease;
+ 
 }
 
 /* Hover */
@@ -125,14 +131,19 @@ margin-top: -40px;
 
 .contact-text{
 
-  margin-left: 10px;
+  margin-left: 0px;
+  
+max-width: 400px;
+
 }
 
 
 .contact-links{
-  margin-top: -190px;
+  margin-top: 15px;
+  
   justify-self: center;
-
+ 
+margin-left: 0%;
 }
   .contact-item {
     justify-content: start;
@@ -144,14 +155,15 @@ margin-top: -40px;
   .contact-section{
     margin-top: -25%; 
     padding-bottom: 250px;
+
   
+ 
   
   }
 
 .contact-container {
   padding: 15px;
   height: 300px;
-  
   
 }
 
@@ -179,4 +191,19 @@ margin-left: 0%;
 
   
 }
+
+
+
+@media  (max-width: 885px) {
+
+.contact-text p {
+
+  text-align:center;
+
+
+}
+}
+
+
+
 

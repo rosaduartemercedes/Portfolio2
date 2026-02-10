@@ -50,7 +50,7 @@ export default function ContactSection() {
             className="contact-item"
           >
             <img src={gmail1} className="icon-img" />
-            <span>produccionesaudiovisualeslook@gmail.com</span>
+            <span> produccionesaudiovisualeslook@gmail.com</span>
           </a>
         </div>
       </div>
