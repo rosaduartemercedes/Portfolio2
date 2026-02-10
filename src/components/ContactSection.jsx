@@ -42,7 +42,7 @@ export default function ContactSection() {
             className="contact-item"
           >
             <img src={wsp2} className="icon-img" />
-            <span> (+54) 11 2558-9198</span>
+            <span> (+54) 11 2222-2222</span>
           </a>
 
           <a

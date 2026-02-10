@@ -23,6 +23,7 @@
   gap: 50px;
   align-items: center;
   transform: translateY(-10%); 
+
   
 }
 
@@ -33,17 +34,20 @@
    font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
+  
+  justify-self: center;
 }
 
 .contact-text p {
   font-size: 18px;
   color: #cccccc;
   margin-top: 10px;
-      font-family: "Google Sans Flex", sans-serif;
+  font-family: "Google Sans Flex", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   text-align: center;
   box-sizing: border-box;
+  text-align:left
 }
 
 /* COLUMNA DERECHA */
@@ -59,7 +63,11 @@
   
   
 }
+.contact-text{
+  
+margin-left: -10%;
 
+}
 
 /* Cada tarjeta de contacto */
 .contact-item {
