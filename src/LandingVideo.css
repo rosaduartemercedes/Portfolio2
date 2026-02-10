@@ -28,29 +28,79 @@
   display: inline-flex;
   align-self: center;
   margin-top: 7%;
-  border-style: none;
+  
   margin-left: 20px;
+  height: 40px;
+  width: 170px;
 }
 .video-btn2{
-  background: linear-gradient(#75e64c, #093d1b);  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg,rgb(159, 156, 156) 9%, rgb(112, 109, 102) 47%, rgb(186, 181, 172) 52%, rgb(253, 253, 253) 94%);
+   transition: transform 0.25s ease, background 0.25s ease;
+  color: rgb(255, 254, 252);
+border-color: #afaeaa;
+ text-shadow:
+   -1px -1px 0 #625f5c,
+    1px -1px 0 #625f5c,
+   -1px  1px 0 #625f5c,
+    1px  1px 0 #625f5c;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, background 0.25s ease;
+  
+  align-self: center;
+  margin-top: 2rem;
+    
   margin-left: 70px;
 }
 
 .video-btn2:hover {
   transform: translateY(-2px) scale(1.03);
-  background: linear-gradient(135deg, #dcd753, #897a17);
+    background: linear-gradient(0deg,rgb(207, 172, 120) 9%, rgb(137, 104, 42) 47%, rgb(217, 184, 114) 52%, rgba(255, 251, 217, 1) 94%);
+
   box-shadow: 0 12px 15px rgba(0, 0, 0, 0.45);
 }
 
 
 .video-btn1{
-   background: linear-gradient(#c7c8c8, #0d1b39);
+ 
    margin-left: 20px;
+
+ display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: linear-gradient(0deg,rgb(62, 59, 65) 9%, rgb(3, 2, 3) 47%, rgb(59, 56, 60) 52%, rgb(94, 94, 81) 94%);
+
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, background 0.25s ease;
+  width: fit-content;
+  display: inline-flex;
+  align-self: center;
+  margin-top: 7%;
+ border-color: #20201d;
+  margin-left: 25px;
+   color: #f7f7f7;
+ text-shadow:
+   -1px -1px 0 #15120e,
+    1px -1px 0 #15120e,
+   -1px  1px 0 #15120e,
+    1px  1px 0 #15120e;
+
   }
 
 .video-btn1:hover {
   transform: translateY(-2px) scale(1.03);
-  background: linear-gradient(135deg, #615e53, #282623);
+  background: linear-gradient(0deg,rgb(62, 59, 65) 9%, rgb(3, 2, 3) 47%, rgb(59, 56, 60) 52%, rgb(94, 94, 81) 94%);
   box-shadow: 0 12px 15px rgba(0, 0, 0, 0.45);
 }
 
@@ -95,12 +145,19 @@
 }
 
 .galeria-header-landing p {
+
+
+
+
+
   font-size: 1.1rem;
-  opacity: 0.8;
+  line-height: 1.5;
   font-family: "Google Sans Flex", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
   text-align: center;
+  color: #79777d;
+  font-weight: 400;
+
   
 }
 
@@ -108,11 +165,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  font-size: 1.1rem;
+  line-height: 1.5;
   font-family: "Google Sans Flex", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
   text-align: center;
-  
+ color: #79777d;
+  font-weight: 400;
   
 }
 
@@ -297,6 +357,7 @@ margin: 0px!important;
 .video-btn2{
   font-size: 12px;
   width: 130px;
+  margin: 0%;
 }
 
 
@@ -323,6 +384,7 @@ margin-bottom: 2%;
     order: 2;
     gap: 15px;
     padding: 0;
+    
     
   }
 
@@ -361,10 +423,9 @@ margin-bottom: 2%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
   margin-bottom: 25px;
-  margin-top: -30px;
-   
+  margin-top: 0px;
+   gap: 40px;
   
 }
 
@@ -380,7 +441,8 @@ margin-bottom: 2%;
   display: flex;
   justify-content: center;
   gap: 10px;
-  
+
+  margin-top: -15px;
 }
 
 

@@ -12,18 +12,26 @@
   justify-content: center;
   gap: 10px;
   padding: 12px 20px;
-  background: linear-gradient(#c7c8c8, #0d1b39);
-  color: white;
+  background: linear-gradient(0deg,rgb(62, 59, 65) 9%, rgb(3, 2, 3) 47%, rgb(59, 56, 60) 52%, rgb(94, 94, 81) 94%);
+
   font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none;
-  border-radius: 12px;
+  font-weight: 600;
+  border-radius: 8px;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.35);
   transition: transform 0.25s ease, background 0.25s ease;
   width: fit-content;
+  display: inline-flex;
   align-self: center;
-  margin-top: 2rem;
-  border-style: none;
+  
+ border-color: #20201d;
+  
+   color: #f7f7f7;
+ text-shadow:
+   -1px -1px 0 #15120e,
+    1px -1px 0 #15120e,
+   -1px  1px 0 #15120e,
+    1px  1px 0 #15120e;
+
 }
 
 .gallery-btn2{
@@ -32,28 +40,25 @@
   justify-content: center;
   gap: 10px;
   padding: 12px 20px;
- 
- 
- 
- 
- 
- 
- background: linear-gradient(#75e64c, #093d1b);
+ margin-left: 0px;
+  background: linear-gradient(0deg,rgb(159, 156, 156) 9%, rgb(112, 109, 102) 47%, rgb(186, 181, 172) 52%, rgb(253, 253, 253) 94%);
+   transition: transform 0.25s ease, background 0.25s ease;
+  color: rgb(255, 254, 252);
+border-color: #afaeaa;
+ text-shadow:
+   -1px -1px 0 #625f5c,
+    1px -1px 0 #625f5c,
+   -1px  1px 0 #625f5c,
+    1px  1px 0 #625f5c;
   color: white;
-
-
   font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none;
-  border-radius: 12px;
+  font-weight: 600;
+  border-radius: 8px;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.35);
   transition: transform 0.25s ease, background 0.25s ease;
   width: fit-content;
-  display: inline-flex;
   align-self: center;
-  margin-top: 7%;
- border-style: none; 
-  margin-left: 25px;
+  
 }
 
 
@@ -95,15 +100,56 @@ border: 1px solid black;
 }*/
 .gallery-btn:hover {
   transform: translateY(-2px) scale(1.03);
-  background: linear-gradient(135deg, #374151, #1f2937);
-  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.45);
+background: linear-gradient(0deg,rgb(62, 59, 65) 9%, rgb(3, 2, 3) 47%, rgb(59, 56, 60) 52%, rgb(94, 94, 81) 94%);
+  
+ box-shadow: 0 12px 15px rgba(0, 0, 0, 0.45);
+ 
 }
 
 .gallery-btn2:hover {
   transform: translateY(-2px) scale(1.03);
-  background: linear-gradient(135deg, #dcd753, #897a17);
+
   box-shadow: 0 12px 15px rgba(0, 0, 0, 0.45);
+ 
+ 
+ 
+ 
+  background: linear-gradient(0deg,rgb(207, 172, 120) 9%, rgb(137, 104, 42) 47%, rgb(217, 184, 114) 52%, rgba(255, 251, 217, 1) 94%);
+  color: rgb(255, 254, 252);
+
+
+
+
+ border-color: #bf9e5a;
+
+
+
+
+
+   color: #f7f7f7;
+
+
+ text-shadow:
+   -1px -1px 0 #856b4c,
+    1px -1px 0 #856b4c,
+   -1px  1px 0 #856b4c,
+    1px  1px 0 #856b4c;
+
+
+
 }
+
+.btnsl{
+  
+   display: flex;
+  gap: 30px;
+  margin-top: 2rem;
+}
+
+
+
+
+
 
 /* Click */
 .gallery-btn:active {
@@ -194,29 +240,35 @@ border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 0px;
   padding: 0px;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden; /* evita que se salga */
- margin-top: -7%;
+ margin-top: -40px;
  margin-bottom: -95px;
+ 
 
 }
 
 .text-box-carousel p {
-  color: #4d4c4f;
+ color: #79777d;
   font-weight: 400;
+  
+
 }
 
 .text-box-carousel h1 {
+
   text-align: center;   /* CENTRA EL TÍTULO */
   width: 100%;
     font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin-top: 30%;
+  margin-top: 0px;
   font-size:xx-large;
+  margin-left: 0%;
+  
 }
 
 /* TEXTO */
@@ -225,7 +277,7 @@ border: 1px solid black;
   max-width: 600px;
   text-align: center;
 
-margin-top: -7%;
+margin-top: 0px;
 display: flex;
   flex-direction: column;
   /*align-items: flex-start; */
@@ -233,14 +285,15 @@ align-items: center;
   font-family: "Google Sans Flex", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-
+   
+  transform: translateX(-8%); 
 }
 
 
 /* CARRUSEL */
 .carousel-container {
   flex: 1;
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
   aspect-ratio: 16 / 9;
   background-color: #71787c84;
@@ -270,15 +323,30 @@ align-items: center;
 /* ---------------------------- */
 
 /* Pantallas medianas (tablets, laptops chicos) */
-@media (max-width: 1100px) {
+@media (min-width: 901px) and (max-width: 1100px) {
   
   /* Evita que el total supere el ancho del viewport */
+.text-box-carousel {
   
+  margin-left: 90px;
+}
+  
+.carousel-container{
+  margin-right: 70px;
+}
   
 }
 
 /* Pantallas chicas: tablet vertical + teléfonos */
 @media (max-width: 900px) {
+
+
+
+.text-box-carousel p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 
 .btnsl {
 display: flex;
@@ -290,6 +358,7 @@ align-self: center;
 align-content: center;
 justify-self: center;
 gap: 6px;
+
 }
 
 
@@ -299,6 +368,11 @@ gap: 6px;
   height: 40px;
 }
 
+ .text-box-carousel{
+  
+  transform: translateX(0px); 
+ }
+
   .text-box-carousel h1 {
 
 margin-top: 15%;
@@ -307,6 +381,8 @@ margin-top: 15%;
     flex-direction: column;
     text-align: center;
     gap: 30px;
+    
+ 
     
   }
 

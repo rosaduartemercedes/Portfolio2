@@ -67,12 +67,12 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: #1f1f1f;
+  background-color: #484747;
   padding: 16px;
   border-radius: 12px;
   text-decoration: none;
   color: white;
-
+  
   transition: background-color 0.3s ease;
 }
 
@@ -104,26 +104,35 @@
     text-align: center;
     justify-content: center;
     margin-top: -45px;
+    
   }
+.contact-links{
+  margin-top: -40px;
 
+}
   .contact-item {
     justify-content: start;
-
+    height: 50px;
+    
+    
   }
   .contact-section{
     margin-top: -25%; 
-    padding-bottom: 45%;
+    padding-bottom: 210px;
   }
 
 .contact-container {
   padding: 15px;
-  height: 380px;
+  height: 300px;
+  
 }
 
 .contact-item span {
   font-size: 20px;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 13px;
+  margin: 0%;
+  display: block;
 }
 
 }

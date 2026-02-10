@@ -57,7 +57,7 @@ useEffect(() => {
           
           >
     
-Consultános 📲
+Consultas 
 </button>
 
           <button className="video-btn2"
@@ -72,7 +72,7 @@ Consultános 📲
           
           >
     
-Reservar fecha
+Reservas 
 </button>
 </div>
 

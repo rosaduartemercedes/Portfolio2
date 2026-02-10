@@ -3,6 +3,10 @@ import "../Carousel.css";
 import cameraIcon from "../assets/camara.png";
 import { Link } from "react-router-dom";
 import calendarIcon from "../assets/images2.png"
+import { IoCameraOutline } from "react-icons/io5";
+import { FaRegCalendarCheck } from "react-icons/fa6";
+
+
 
 export default function Carousel({ openGalleryModal })  {
   const [images, setImages] = useState([]);
@@ -35,10 +39,14 @@ useEffect(() => {
   return (
     <div className="carousel-wrapper">
       <div className="text-box-carousel">
-        <h1>Reviví cada momento.</h1>
+        
+  
+        <h1>Reviví cada momento.</h1>  
+        
+        
         <p>Capturamos la esencia. No solo sacamos fotos; diseñamos una solución personalizada para que tus recuerdos se vean increíbles.</p>
 
-<div>
+<div className="botones">
 
 
 <div className="btnsl">
@@ -46,8 +54,11 @@ useEffect(() => {
   className="gallery-btn"
   onClick={openGalleryModal}
 >
-  <img src={cameraIcon} alt="camera" className="camera-icon" />
-  Abrir galería
+ {//<img src={cameraIcon} alt="camera" className="camera-icon" />
+ } 
+
+
+  Ver galería
 </button>
 
 
@@ -63,15 +74,23 @@ useEffect(() => {
 
  
  >
-     <img src={calendarIcon} alt="camera" className="camera-icon" />
-Reserva tu fecha hoy
+    {//<img src={calendarIcon} alt="camera" className="camera-icon" />
+
+
+
+
+    } 
+
+
+
+¡Reserva tu fecha!
 </button>
 
 
-
+</div>
 
 </div>
-</div>
+
 
       </div>
 

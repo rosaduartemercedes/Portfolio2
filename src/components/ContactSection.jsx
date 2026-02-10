@@ -18,7 +18,7 @@ export default function ContactSection() {
             
             <br></br> <br></br>
             
-             Podes hacerlo atravéz de cualquiera de nuestros canales de atención.
+             Podes hacerlo atravéz de cualquiera de nuestros canales de atención:
           </p>
         </div>
 
@@ -32,7 +32,7 @@ export default function ContactSection() {
             className="contact-item"
           >
             <img src={instagram} className="icon-img" />
-            <span>Instagram: @produccioneslook</span>
+            <span>@produccioneslook</span>
           </a>
 
           <a
@@ -42,7 +42,7 @@ export default function ContactSection() {
             className="contact-item"
           >
             <img src={wsp2} className="icon-img" />
-            <span>WhatsApp: (+54) 11 2558-9198</span>
+            <span> (+54) 11 2558-9198</span>
           </a>
 
           <a
@@ -50,7 +50,7 @@ export default function ContactSection() {
             className="contact-item"
           >
             <img src={gmail1} className="icon-img" />
-            <span>Email: produccionesaudiovisualeslook@gmail.com</span>
+            <span>produccionesaudiovisualeslook@gmail.com</span>
           </a>
         </div>
       </div>
