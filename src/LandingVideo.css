@@ -24,14 +24,14 @@
   border-radius:12px;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.35);
   transition: transform 0.25s ease, background 0.25s ease;
-  width: 160px;
+  width: 140px;
   display: inline-flex;
   align-self: center;
   margin-top: 7%;
   
   margin-left: 20px;
   height: 40px;
-  width: 170px;
+  
 }
 .video-btn2{
   display: inline-flex;
@@ -47,7 +47,7 @@ border-color: #afaeaa;
    -1px  1px 0 #625f5c,
     1px  1px 0 #625f5c;
   color: white;
-  font-size: 1rem;
+  
   font-weight: 600;
   border-radius: 8px;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.35);
@@ -78,12 +78,11 @@ border-color: #afaeaa;
   padding: 12px 20px;
   background: linear-gradient(0deg,rgb(62, 59, 65) 9%, rgb(3, 2, 3) 47%, rgb(59, 56, 60) 52%, rgb(94, 94, 81) 94%);
 
-  font-size: 1rem;
   font-weight: 600;
   border-radius: 8px;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.35);
   transition: transform 0.25s ease, background 0.25s ease;
-  width: fit-content;
+  
   display: inline-flex;
   align-self: center;
   margin-top: 7%;
@@ -355,7 +354,7 @@ margin: 0px!important;
 
 .video-btn1,
 .video-btn2{
-  font-size: 12px;
+  font-size: 16px;
   width: 130px;
   margin: 0%;
 }
