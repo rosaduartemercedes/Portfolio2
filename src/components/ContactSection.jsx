@@ -18,7 +18,7 @@ export default function ContactSection() {
             
             <br></br> <br></br>
             
-             Podes hacerlo atravéz de cualquiera de nuestros canales de atención:
+             ¡Podes hacerlo atravéz de cualquiera de nuestros canales de atención!
           </p>
         </div>
 

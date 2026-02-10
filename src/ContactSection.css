@@ -112,8 +112,18 @@ margin-left: -10%;
     text-align: center;
     justify-content: center;
     margin-top: -45px;
+     
+    
     
   }
+
+
+.contact-text{
+
+  margin-left: 10px;
+}
+
+
 .contact-links{
   margin-top: -40px;
 
@@ -126,7 +136,7 @@ margin-left: -10%;
   }
   .contact-section{
     margin-top: -25%; 
-    padding-bottom: 210px;
+    padding-bottom: 250px;
   }
 
 .contact-container {
@@ -144,3 +154,5 @@ margin-left: -10%;
 }
 
 }
+
+
