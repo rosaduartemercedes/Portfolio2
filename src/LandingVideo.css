@@ -8,11 +8,13 @@
 
 .line{
   display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 .video-btn2,
 .video-btn1{
   
- display: inline-flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -29,7 +31,6 @@
   align-self: center;
   margin-top: 7%;
   
-  margin-left: 20px;
   height: 40px;
   
 }
@@ -38,25 +39,22 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(0deg,rgb(159, 156, 156) 9%, rgb(112, 109, 102) 47%, rgb(186, 181, 172) 52%, rgb(253, 253, 253) 94%);
-   transition: transform 0.25s ease, background 0.25s ease;
+  transition: transform 0.25s ease, background 0.25s ease;
   color: rgb(255, 254, 252);
-border-color: #afaeaa;
- text-shadow:
+  border-color: #afaeaa;
+  text-shadow:
    -1px -1px 0 #625f5c,
     1px -1px 0 #625f5c,
    -1px  1px 0 #625f5c,
     1px  1px 0 #625f5c;
   color: white;
-  
   font-weight: 600;
   border-radius: 8px;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.35);
   transition: transform 0.25s ease, background 0.25s ease;
-  
   align-self: center;
   margin-top: 2rem;
-    
-  margin-left: 70px;
+  margin-left: 0px;
 }
 
 .video-btn2:hover {
@@ -69,7 +67,7 @@ border-color: #afaeaa;
 
 .video-btn1{
  
-   margin-left: 20px;
+   margin-left: 0px;
 
  display: inline-flex;
   align-items: center;
@@ -87,7 +85,7 @@ border-color: #afaeaa;
   align-self: center;
   margin-top: 7%;
  border-color: #20201d;
-  margin-left: 25px;
+  
    color: #f7f7f7;
  text-shadow:
    -1px -1px 0 #15120e,
@@ -133,8 +131,9 @@ border-color: #afaeaa;
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin-left: 67px;
+  margin-left: 0px;
   margin-top: -45px;
+justify-self: center;
 }
 
 
@@ -146,9 +145,8 @@ border-color: #afaeaa;
 .galeria-header-landing p {
 
 
-
-
-
+width: 550px;
+margin-left: 0%;
   font-size: 1.1rem;
   line-height: 1.5;
   font-family: "Google Sans Flex", sans-serif;
@@ -156,7 +154,7 @@ border-color: #afaeaa;
   text-align: center;
   color: #79777d;
   font-weight: 400;
-
+justify-self: center;
   
 }
 
@@ -172,6 +170,7 @@ border-color: #afaeaa;
   text-align: center;
  color: #79777d;
   font-weight: 400;
+  
   
 }
 
