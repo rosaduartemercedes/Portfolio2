@@ -6,6 +6,19 @@
 }
 
 
+h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  
+}
+
+
 .line{
   display: flex;
   gap: 20px;
@@ -109,6 +122,7 @@
   margin: 0 auto;
   padding: 80px 24px;
   margin-bottom: 3%;
+  width: 100%;
 }
 
 /* =========================
@@ -145,7 +159,7 @@ justify-self: center;
 .galeria-header-landing p {
 
 
-width: 550px;
+width: 100%;
 margin-left: 0%;
   font-size: 1.1rem;
   line-height: 1.5;
@@ -162,7 +176,7 @@ justify-self: center;
   display: flex;
   flex-direction: column;
   gap: 10px;
-
+align-self: center;
   font-size: 1.1rem;
   line-height: 1.5;
   font-family: "Google Sans Flex", sans-serif;
@@ -170,7 +184,7 @@ justify-self: center;
   text-align: center;
  color: #79777d;
   font-weight: 400;
-  
+  width: 100%;
   
 }
 
@@ -242,6 +256,7 @@ justify-self: center;
 
 .videos-wrapper {
   min-height: 62vh;   /* reserva espacio */
+
 }
 
 .videos-grid {
@@ -249,6 +264,7 @@ justify-self: center;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
   align-content: start; /* 🔑 evita estiramiento */
+  width: 100%;
 }
 
 
@@ -311,8 +327,6 @@ justify-self: center;
 
 
 
-
-
 @media (min-width: 300px) and (max-width: 408px){
 
   .small-card-video-landing {
@@ -341,10 +355,37 @@ margin: 0px!important;
 
 
 
+@media (min-width: 768px) and (max-width: 959px){
 
 
+.cards-container-video-landing  {
+ justify-content: space-around;
+  gap: 10px;
+  
+}
 
+.text-box-video-landing {
+  margin-left: -10%;
 
+}
+
+.galeria-header-landing p {
+    width: 100%;
+}
+
+.galeria-header-landing{
+   white-space: nowrap;
+   margin-left: 0%;
+   
+}
+.small-card-video-landing img{
+  width: 80px;
+  height: 50px;
+}
+.small-card-video-landing{
+  width: 100px;
+}
+}
 
 
 
@@ -401,17 +442,18 @@ margin-bottom: 2%;
       margin-top: 30px;
 
  padding-bottom: 30px;   
+ width: 100%;
   }
-
+.galeria-header-landing{
+   width: 100%;
+}
   .galeria-header-landing h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+   
     margin: 0%;
   }
-
-
 
 
 
@@ -448,7 +490,9 @@ margin-bottom: 2%;
 
 
 
-
+.text-box-video-landing{
+  width: 100%;
+}
 
 
 
