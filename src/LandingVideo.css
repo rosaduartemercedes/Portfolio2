@@ -319,12 +319,27 @@ align-self: center;
 
 
 
+.mobile-break {
+  display: none;
+}
 
 
 
 
 
+@media (max-width: 409px) {
+  .mobile-break {
+    display: block;
+  }
+}
 
+
+
+@media (min-width: 960px) and (max-width: 1085px){
+  .mobile-break {
+    display: block;
+  }
+}
 
 
 @media (min-width: 300px) and (max-width: 408px){
@@ -334,7 +349,6 @@ align-self: center;
 margin: 0px!important;
 
 }
-
 
 
 

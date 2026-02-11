@@ -12,7 +12,7 @@ export default function LandingVideo() {
   const [eventoActivo, setEventoActivo] = useState(location.state?.evento ?? null);
   const [loading, setLoading] = useState(true);
 
-
+const isMobile = window.innerWidth < 409;
 
   
 useEffect(() => {
@@ -43,7 +43,7 @@ useEffect(() => {
       <div className="landing-top">
         <header className="galeria-header-landing">
           <h1>Video y edición</h1>
-          <p>Algunos cortos de nuestros trabajos. <br></br>¿Consultas? ¡Escribínos! 🗓️ Agenda 2026 abierta. </p>
+          <p>Algunos cortos de nuestros trabajos. <br></br>¿Consultas? ¡Escribínos!  <br class="mobile-break" ></br> 🗓️ Agenda 2026 abierta. </p>
           
          <div className="line"> 
           <button className="video-btn1"
